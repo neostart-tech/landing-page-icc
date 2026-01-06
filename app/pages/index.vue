@@ -1,5 +1,5 @@
 <template>
-{{ $t('welcome') }}
+zzzzz
 </template>
 <script setup>
  
