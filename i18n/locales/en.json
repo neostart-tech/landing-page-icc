@@ -1,3 +1,21 @@
 {
-  "welcome": "Welcome"
+  "header": {
+    "title": "Impact Christian Center | TOGO",
+    "subtitle": "Share rides, live fellowship"
+  },
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "blog": "Blog",
+    "faq": "FAQs",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "buttons": {
+    "download": "Download"
+  },
+  "download": {
+    "title": "Download the application",
+    "choose": "Choose your platform"
+  }
 }

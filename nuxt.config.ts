@@ -1,24 +1,24 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: ["@nuxt/eslint", "@nuxt/ui", "@nuxt/test-utils", "@nuxtjs/i18n"],
-  lazy: true,
 
   i18n: {
     defaultLocale: "fr",
     strategy: "no_prefix", // pas de /fr ou /en dans l’URL
     locales: [
-      { code: "fr", name: "Français", file: "fr.json", language: "fr-FR" },
-      { code: "en", name: "English", file: "en.json", language: "en-US" },
+      { code: "en", name: "English", file: "en.json" },
+      { code: "fr", name: "Français", file: "fr.json" },
     ],
     langDir: "locales/",
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: "i18n_redirected",
+      alwaysRedirect: false,
+    },
   },
-  detectBrowserLanguage: {
-    useCookie: true,
-    cookieKey: "i18n_redirected",
-    alwaysRedirect: false,
-  },
+
   devtools: {
-    enabled: true,
+    enabled: false,
   },
 
   css: ["~/assets/css/main.css"],
