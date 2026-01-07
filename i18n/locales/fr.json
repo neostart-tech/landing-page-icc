@@ -1,4 +1,21 @@
-
 {
-  "welcome": "Bienvenue"
+  "header": {
+    "title": "Impact Centre Chrétien | TOGO",
+    "subtitle": "Partagez vos trajets, vivez la communion"
+  },
+  "nav": {
+    "home": "Accueil",
+    "features": "Fonctionnalités",
+    "blog": "Blog",
+    "faq": "FAQs",
+    "contact": "Contact",
+    "language": "Langue"
+  },
+  "buttons": {
+    "download": "Télécharger"
+  },
+  "download": {
+    "title": "Télécharger l'application",
+    "choose": "Choisissez votre plateforme"
+  }
 }
