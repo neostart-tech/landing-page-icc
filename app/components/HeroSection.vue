@@ -13,7 +13,7 @@
     <div class="absolute inset-0 bg-black/70"></div>
 
     <!-- Contenu -->
-    <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+    <div class="relative z-10 max-w-7xl mx-auto px-6 w-full ml-5 md:ml-10">
       <div class="max-w-2xl">
         <!-- Titre -->
         <h1 class="text-4xl md:text-5xl font-bold leading-tight">
@@ -50,12 +50,13 @@
             <img src="/icone/apple-store.png" class="h-5 invert" />
             <span class="text-sm font-medium">Disponible sur Apple Store</span>
           </a>
+
         </div>
       </div>
 
       <!-- Statistiques -->
       <div
-        class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-10 text-center"
+        class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-10 text-center "
       >
         <div>
           <p class="text-3xl font-bold">2000+</p>

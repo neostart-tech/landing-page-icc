@@ -2,11 +2,11 @@
   <div>
     <!-- Header -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm">
-      <nav class="py-4 px-8 lg:px-16 xl:px-32">
+      <nav class="py-4 px-5 lg:px-10 xl:px-14">
         <div class="flex items-center justify-between">
 
           <!-- Logo + texte -->
-          <div class="flex items-center space-x-4">
+          <div class="flex items-center space-x-4 ">
             <NuxtLink to="/" class="flex items-center">
               <img src="/logo/logo-icc.jpg" alt="ICC" class="h-12 w-auto" />
             </NuxtLink>
