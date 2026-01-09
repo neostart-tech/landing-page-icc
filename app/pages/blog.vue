@@ -1,72 +1,81 @@
 <template>
   <div class="bg-white">
-
-    <!-- HERO IMAGE -->
-    <section class="relative h-[260px] w-full">
-      <img
-        src="/images/jeunes-amis-afro-americains-assis-dans-voiture.jpg"
-        alt="Blog ICC"
-        class="w-full h-full object-cover"
-      />
-    </section>
-
-    <!-- ARTICLE PRINCIPAL -->
-    <section class="py-16 px-6">
-      <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
-
-        <!-- LEFT CONTENT -->
-        <div class="lg:col-span-2">
-          <h1 class="text-2xl md:text-3xl font-extrabold mb-4">
+    <!-- ARTICLE -->
+    <section class="max-w-7xl mx-auto px-5 lg:px-10 xl:px-14 py-16">
+      <!-- HEADER -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start mb-10">
+        <!-- LEFT -->
+        <div>
+          <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
             Une nouvelle mise à jour <br />
             dans ICC Covoiturage
           </h1>
 
-          <p class="text-sm text-gray-500 mb-6">
-            Publié le mardi 10 décembre 2025
-          </p>
-
-          <img
-            src="/images/m1.jpg"
-            alt="Article image"
-            class="w-full rounded-xl mb-6"
-          />
-
-          <p class="text-gray-700 text-sm leading-relaxed mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-          </p>
-
-          <p class="text-gray-700 text-sm leading-relaxed mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-
-          <p class="text-gray-700 text-sm leading-relaxed">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-          </p>
+          <div class="flex items-center gap-3 mt-4">
+            <span class="w-10 h-[1px] bg-gray-300"></span>
+            <p class="text-sm text-gray-500">
+              Publié le Mercredi 20 Octobre 2025
+            </p>
+          </div>
         </div>
 
-        <!-- RIGHT SIDEBAR -->
-        <aside class="space-y-4 text-sm text-gray-600">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.
-          </p>
-        </aside>
+        <!-- RIGHT -->
+        <p class="text-black text-sm leading-relaxed">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+        </p>
+      </div>
 
+      <!-- IMAGE -->
+      <div class="mb-12">
+        <img
+          src="/images/image.jpg"
+          alt="Blog ICC Covoiturage"
+          class="w-full h-[260px] md:h-[420px] object-cover rounded-2xl"
+        />
+      </div>
+
+      <!-- CONTENT -->
+      <div class="text-black text-sm leading-7 space-y-5">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+        </p>
+
+        <p>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+          doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+          inventore veritatis et quasi architecto beatae vitae dicta sunt
+          explicabo.
+        </p>
+
+        <p>
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+          fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+          sequi nesciunt.
+        </p>
+
+        <p>
+          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+          consectetur, adipisci velit, sed quia non numquam eius modi tempora
+          incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        </p>
       </div>
     </section>
 
     <!-- AUTRES ARTICLES -->
-    <section class="py-20 px-6 bg-gray-50">
+    <section class="py-20 px-5 lg:px-10 xl:px-14 bg-gray-50">
       <div class="max-w-7xl mx-auto">
-
         <!-- TITLE + FILTER -->
         <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-10">
           <h2 class="text-2xl font-extrabold mb-4 md:mb-0">
@@ -88,7 +97,6 @@
 
         <!-- ARTICLES GRID -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
           <div
             v-for="i in 6"
             :key="i"
@@ -110,8 +118,8 @@
               </h3>
 
               <p class="text-xs text-gray-600 mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
 
               <p class="text-xs text-gray-400">
@@ -119,10 +127,8 @@
               </p>
             </div>
           </div>
-
         </div>
       </div>
     </section>
-
   </div>
 </template>
