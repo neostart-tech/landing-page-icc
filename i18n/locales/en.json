@@ -1,7 +1,7 @@
 {
   "header": {
     "title": "Impact Christian Center | TOGO",
-    "subtitle": "Share rides, live fellowship"
+    "subtitle": "Share your rides, live the fellowship"
   },
   "nav": {
     "home": "Home",
@@ -12,10 +12,174 @@
     "language": "Language"
   },
   "buttons": {
-    "download": "Download"
+    "download": "Download",
+    "send": "Send",
+    "search": "Search",
+    "see_more": "See more",
+    "see_demo": "See Demo",
+    "subscribe": "Subscribe"
   },
   "download": {
-    "title": "Download the application",
-    "choose": "Choose your platform"
+    "title": "Download the app",
+    "choose": "Choose your platform",
+    "google_play": "Download Google Play",
+    "apple_store": "Available on Apple Store",
+    "play_store": "Download on Play Store",
+    "app_store": "Available on App Store"
+  },
+  "blog": {
+    "hero_title": "A new update in ICC Carpooling",
+    "published_on": "Published on",
+    "read_more": "Read more",
+    "other_articles": "Other articles",
+    "filters": {
+      "update": "Update",
+      "event": "Event",
+      "announcement": "Announcement"
+    },
+    "categories": {
+      "update": "UPDATE",
+      "event": "EVENT",
+      "announcement": "ANNOUNCEMENT"
+    }
+  },
+  "contact": {
+    "title": "Contact Us!",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "phone": "+228 93 00 00 00",
+    "address": "Hountigomé, Lomé",
+    "email": "contact@icc-togo.org",
+    "form": {
+      "first_name": "Name",
+      "email": "Email",
+      "phone_number": "Phone number",
+      "subject": "Message subject",
+      "message": "Message",
+      "send": "Send"
+    },
+    "faq": {
+      "title": "Find answers to your questions here",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "search_placeholder": "Search a question",
+      "question": "Lorem ipsum dolor sit amet?"
+    }
+  },
+  "about": {
+    "title": "Who are we?",
+    "description": "Impact Christian Center of Togo is a church where God's love transforms ordinary people into true conquerors, committed to training disciples and impacting society through the love and truth of the Gospel. It brings together a living community, passionate about God's presence, service, and personal development under the leadership of Pastor Herman FEHA. To facilitate access to worship services and events, the church provides a carpooling application."
+  },
+  "who_can_use": {
+    "title": "So, Who can use it?",
+    "subtitle": "For all who serve and participate in church activities.",
+    "cards": {
+      "faithful": {
+        "title": "The Faithful",
+        "description": "All members of ICC churches in Togo"
+      },
+      "stars": {
+        "title": "The S.T.A.R",
+        "description": "Servants in the departments of ICC churches"
+      },
+      "impact_family": {
+        "title": "Impact Family",
+        "description": "Leaders in ICC churches (Pastors, Assistant Pastors)"
+      },
+      "shepherds": {
+        "title": "The Shepherds",
+        "description": "Leaders in ICC churches (Pastors, Assistant Pastors)"
+      }
+    }
+  },
+  "what_we_offer": {
+    "title": "What we offer",
+    "subtitle": "Share your rides, live in fellowship, and join every service without worry, thanks to the solidarity carpooling of Impact Christian Center of Togo. Come share moments of faith and brotherhood!",
+    "cards": {
+      "carpooling": {
+        "title": "Activity-linked carpooling",
+        "description": "Offer or request a ride for your church programs: services, meetings, rehearsals, impact families, departments, etc."
+      },
+      "communication": {
+        "title": "Communication and integrated Map",
+        "description": "Group chat between driver and passengers, trip tracking on the map, driver's position, route and estimated time of arrival."
+      },
+      "enjoy_app": {
+        "title": "Enjoy the application",
+        "description": "When each new activity is created, a notification is sent to users by email and in the application."
+      }
+    }
+  },
+  "hero": {
+    "title": "Join your church programs with ease.",
+    "description": "Share your rides, live in fellowship, and join every service without worry and without any cost thanks to the solidarity carpooling of Impact Christian Center of Togo. Users from all churches can switch or request carpooling.",
+    "stats": {
+      "users": "Users",
+      "vehicles": "Vehicles",
+      "activities": "Activities",
+      "rides": "Rides"
+    }
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Subscribe to the newsletter",
+      "subtitle": "Be the first to receive all the latest articles",
+      "email_placeholder": "Your email",
+      "accept_newsletter": "I agree to subscribe to the Newsletter"
+    },
+    "navigation": {
+      "title": "Navigation",
+      "home": "Home",
+      "features": "Feature details",
+      "faqs": "FAQs",
+      "blogs": "Blogs",
+      "contact": "Contact",
+      "languages": "Languages"
+    },
+    "useful_links": {
+      "title": "Useful links",
+      "getting_started": "Getting started",
+      "terms": "General Terms of Use",
+      "account_deletion": "Account deletion policy",
+      "privacy": "Privacy policy",
+      "legal": "Legal notices"
+    },
+    "our_app": {
+      "title": "Our application"
+    },
+    "copyright": "© Copyrights, ICC – TOGO, 2025. All rights reserved. Developed by Neo Start Technology"
+  },
+  "how_it_works": {
+    "title": "How does it work?",
+    "subtitle": "Share your rides, live in fellowship, and join every service without worry, thanks to the solidarity carpooling of Impact Christian Center of Togo. Come share moments of faith and brotherhood!",
+    "steps": {
+      "download": {
+        "title": "Download the application",
+        "description": "Currently available on App Store and Play Store, the application is bilingual for an optimal experience wherever you are."
+      },
+      "create_account": {
+        "title": "Create your account",
+        "description": "Register for free and enjoy our application on all your devices with a single account."
+      },
+      "verify_identity": {
+        "title": "Verify your identity",
+        "description": "Register for free and enjoy our application on all your devices with a single account."
+      },
+      "enjoy_app": {
+        "title": "Enjoy the application",
+        "description": "When each new activity is created, a notification is sent to users by email and in the application."
+      }
+    }
+  },
+  "stay_connected": {
+    "title": "Stay connected to our news",
+    "buttons": {
+      "training": "Training session",
+      "update": "Update",
+      "announcements": "Announcements"
+    },
+    "categories": {
+      "training": "TRAINING SESSION",
+      "update": "UPDATE",
+      "announcements": "ANNOUNCEMENTS"
+    }
   }
 }
