@@ -13,7 +13,7 @@
     <div class="absolute inset-0 bg-black/70"></div>
 
     <!-- Contenu -->
-    <div class="relative z-10 max-w-7xl mx-auto px-6 w-full ml-5 md:ml-10">
+    <div class="relative z-10 max-w-7xl mx-auto px-8 lg:px-16 xl:px-24 2xl:px-32 w-full">
       <div class="max-w-2xl">
         <!-- Titre -->
         <h1 class="text-4xl md:text-5xl font-bold leading-tight">

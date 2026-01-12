@@ -48,7 +48,6 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "phone": "+228 93 00 00 00",
     "address": "Hountigomé, Lomé",
-    "email": "contact@icc-togo.org",
     "form": {
       "first_name": "Nom",
       "email": "Email",

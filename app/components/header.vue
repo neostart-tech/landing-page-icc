@@ -2,7 +2,7 @@
   <div>
     <!-- Header -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm">
-      <nav class="py-4 px-5 lg:px-10 xl:px-14">
+      <nav class="py-4 px-8 lg:px-16 xl:px-24 2xl:px-32">
         <div class="flex items-center justify-between">
 
           <!-- Logo + texte -->
