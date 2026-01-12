@@ -1,21 +1,16 @@
 <template>
+  <Breadcrumb :breadcrumb="breadcrumbItems" />
+
   <div class="bg-white">
-    <!-- HERO IMAGE -->
-    <section class="relative h-[260px] w-full">
-      <img
-        src="/images/jeunes-amis-afro-americains-assis-dans-voiture.jpg"
-        alt="Contact"
-        class="w-full h-full object-cover"
-      />
-    </section>
 
     <!-- CONTACT SECTION -->
-    <section class="py-18 px-5 lg:px-10 xl:px-14">
+    <section class="py-18 px-8 lg:px-16 xl:px-24 2xl:px-32">
       <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
         <!-- LEFT : CONTACT INFOS -->
         <div class="flex flex-col justify-start">
           <h2 class="text-2xl text-black font-extrabold mb-5">
-            Contactez-nous!
+            Contactez-nous !
           </h2>
 
           <p class="text-black mb-10 max-w-md">
@@ -80,6 +75,7 @@
             Envoyer
           </button>
         </form>
+
       </div>
     </section>
 
@@ -93,8 +89,9 @@
     </section>
 
     <!-- FAQ SECTION -->
-    <section class="py-20 px-5 lg:px-10 xl:px-14 bg-gray-50">
+    <section class="py-20 px-8 lg:px-16 xl:px-24 2xl:px-32 bg-gray-50">
       <div class="max-w-7xl mx-auto flex flex-col gap-12">
+
         <!-- TOP -->
         <div class="flex flex-col lg:flex-row items-start justify-between gap-12">
           <!-- LEFT -->
@@ -162,7 +159,17 @@
             </p>
           </div>
         </div>
+
       </div>
     </section>
+
   </div>
 </template>
+
+<script setup>
+import Breadcrumb from '~/components/Breadcrumb.vue';
+const breadcrumbItems = [
+  { label: 'Accueil', href: '/' },
+  { label: 'Contact' } // Pas de href = texte actif
+]
+</script>

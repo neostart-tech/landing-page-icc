@@ -1,4 +1,7 @@
 <template>
+  <Breadcrumb 
+      :breadcrumb="breadcrumbItems" 
+    />
   <div class="bg-white">
     <!-- ARTICLE -->
     <section class="max-w-7xl mx-auto px-5 lg:px-10 xl:px-14 py-16">
@@ -31,7 +34,7 @@
       <!-- IMAGE -->
       <div class="mb-12">
         <img
-          src="/images/image.jpg"
+          src="/images/f.jpg"
           alt="Blog ICC Covoiturage"
           class="w-full h-[260px] md:h-[420px] object-cover rounded-2xl"
         />
@@ -78,7 +81,7 @@
       <div class="max-w-7xl mx-auto">
         <!-- TITLE + FILTER -->
         <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-10">
-          <h2 class="text-2xl font-extrabold mb-4 md:mb-0">
+          <h2 class="text-2xl font-extrabold mb-4 md:mb-0 text-black">
             Autres articles
           </h2>
 
@@ -103,7 +106,7 @@
             class="bg-white rounded-xl overflow-hidden shadow-sm"
           >
             <img
-              src="/images/m1.jpg"
+              src="/images/f.jpg"
               alt="Article"
               class="w-full h-48 object-cover"
             />
@@ -132,3 +135,11 @@
     </section>
   </div>
 </template>
+
+<script setup>
+  import Breadcrumb from '~/components/Breadcrumb.vue';
+const breadcrumbItems = [
+  { label: 'Accueil', href: '/' },
+  { label: 'Blog' } // Pas de href = texte actif
+]
+</script>

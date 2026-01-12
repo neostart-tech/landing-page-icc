@@ -12,10 +12,173 @@
     "language": "Langue"
   },
   "buttons": {
-    "download": "Télécharger"
+    "download": "Télécharger",
+    "send": "Envoyer",
+    "search": "Rechercher",
+    "see_more": "Voir plus",
+    "see_demo": "Voir Demo",
+    "subscribe": "Je"
   },
   "download": {
     "title": "Télécharger l'application",
-    "choose": "Choisissez votre plateforme"
+    "choose": "Choisissez votre plateforme",
+    "google_play": "Télécharger Google Play",
+    "apple_store": "Disponible sur Apple Store",
+    "play_store": "Télécharger sur Play Store",
+    "app_store": "Disponible sur App Store"
+  },
+  "blog": {
+    "hero_title": "Une nouvelle mise à jour dans ICC Covoiturage",
+    "published_on": "Publié le",
+    "read_more": "Lire la suite",
+    "other_articles": "Autres articles",
+    "filters": {
+      "update": "Mise à jour",
+      "event": "Événement",
+      "announcement": "Annonce"
+    },
+    "categories": {
+      "update": "MISE À JOUR",
+      "event": "ÉVÉNEMENT",
+      "announcement": "ANNONCE"
+    }
+  },
+  "contact": {
+    "title": "Contactez-nous!",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "phone": "+228 93 00 00 00",
+    "address": "Hountigomé, Lomé",
+    "form": {
+      "first_name": "Nom",
+      "email": "Email",
+      "phone_number": "Numéro de téléphone",
+      "subject": "Objet du message",
+      "message": "Message",
+      "send": "Envoyer"
+    },
+    "faq": {
+      "title": "Trouvez réponse à vos questions ici",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "search_placeholder": "Rechercher une question",
+      "question": "Lorem ipsum dolor sit amet?"
+    }
+  },
+  "about": {
+    "title": "Qui sommes-nous ?",
+    "description": "Impact Centre Chrétien du Togo est une église où l'amour de Dieu transforme des personnes ordinaires en de véritables conquérants, engagée à former des disciples et à impacter la société par l'amour et la vérité de l'Évangile. Elle rassemble une communauté vivante, passionnée par la présence de Dieu, le service et le développement personnel sous le leadership du Pasteur Herman FEHA. Afin de faciliter l'accès aux cultes et événements, l'église met à disposition une application de covoiturage."
+  },
+  "who_can_use": {
+    "title": "Alors, Qui peut l'utiliser ?",
+    "subtitle": "Pour tous ceux qui servent et participent aux activités de l'église.",
+    "cards": {
+      "faithful": {
+        "title": "Les fidèles",
+        "description": "Tous les membres des églises ICC au Togo"
+      },
+      "stars": {
+        "title": "Les S.T.A.R",
+        "description": "Les serviteurs et servantes des départements des églises ICC"
+      },
+      "impact_family": {
+        "title": "Famille d'impact",
+        "description": "Les responsables dans les églises ICC (Pasteurs, Assistants Pasteurs)"
+      },
+      "shepherds": {
+        "title": "Les Bergers",
+        "description": "Les responsables dans les églises ICC (Pasteurs, Assistants Pasteurs)"
+      }
+    }
+  },
+  "what_we_offer": {
+    "title": "Ce que nous offrons",
+    "subtitle": "Partagez vos trajets, vivez la communion, et rejoignez chaque culte sans souci, grâce au covoiturage solidaire d'Impact Centre Chrétien du Togo. Venez partager des moments de foi et de fraternité !",
+    "cards": {
+      "carpooling": {
+        "title": "Covoiturage lié aux activités",
+        "description": "Proposez ou demandez un trajet pour les programmes de votre église : cultes, réunions, répétitions, falilles d'impact, départements, etc."
+      },
+      "communication": {
+        "title": "Communication et Map intégrée",
+        "description": "Chat groupé entre conducteur et passagers, suivi du trajet sur la carte, position du conducteur, itinéraire et estimation du temps d'arrivée."
+      },
+      "enjoy_app": {
+        "title": "Profiter de l'application",
+        "description": "À la création de chaque nouvelle activité, une notification est envoyée aux utilisateurs par mail et dans l'application."
+      }
+    }
+  },
+  "hero": {
+    "title": "Rejoignez vos programmes d'église en toute simplicité.",
+    "description": "Partagez vos trajets, vivez la communion, et rejoignez chaque culte sans souci et sans aucun frais grâce au covoiturage solidaire d'Impact Centre Chrétien du Togo. Les utilisateurs de toutes les églises peuvent switcher ou demander du covoiturage.",
+    "stats": {
+      "users": "Utilisateurs",
+      "vehicles": "Véhicules",
+      "activities": "Activités",
+      "rides": "Trajets"
+    }
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Abonnez-vous à la newsletter",
+      "subtitle": "Soyez le premier à recevoir tous les derniers articles",
+      "email_placeholder": "Votre email",
+      "accept_newsletter": "J'accepte m'abonner à la News Letter"
+    },
+    "navigation": {
+      "title": "Navigation",
+      "home": "Accueil",
+      "features": "Détails de fonctionnalités",
+      "faqs": "FAQs",
+      "blogs": "Blogs",
+      "contact": "Contact",
+      "languages": "Langues"
+    },
+    "useful_links": {
+      "title": "Liens utiles",
+      "getting_started": "Prise en main",
+      "terms": "Conditions Générales d'Utilisation",
+      "account_deletion": "Politique de suppression de compte",
+      "privacy": "Politique de confidentialité",
+      "legal": "Mentions Légales"
+    },
+    "our_app": {
+      "title": "Notre application"
+    },
+    "copyright": "© Copyrights, ICC – TOGO, 2025. Tous droits réservés. Développé par Neo Start Technology"
+  },
+  "how_it_works": {
+    "title": "Comment ça marche ?",
+    "subtitle": "Partagez vos trajets, vivez la communion, et rejoignez chaque culte sans souci, grâce au covoiturage solidaire d'Impact Centre Chrétien du Togo. Venez partager des moments de foi et de fraternité !",
+    "steps": {
+      "download": {
+        "title": "Télécharger l'application",
+        "description": "Disponibles actuellement sur App store et Play store, l'application est bilingue pour une expérience optimale où que vous soyez."
+      },
+      "create_account": {
+        "title": "Créer votre compte",
+        "description": "Inscrivez-vous gratuitement et profitez de notre application sur tous vos appareils avec un seul compte."
+      },
+      "verify_identity": {
+        "title": "Certifier votre identité",
+        "description": "Inscrivez-vous gratuitement et profitez de notre application sur tous vos appareils avec un seul compte."
+      },
+      "enjoy_app": {
+        "title": "Profiter de l'application",
+        "description": "À la création de chaque nouvelle activité, une notification est envoyée aux utilisateurs par mail et dans l'application."
+      }
+    }
+  },
+  "stay_connected": {
+    "title": "Restez connecté à nos actualités",
+    "buttons": {
+      "training": "Session de formation",
+      "update": "Mise à jour",
+      "announcements": "Annonces"
+    },
+    "categories": {
+      "training": "SESSION DE FORMATION",
+      "update": "MISE À JOUR",
+      "announcements": "ANNONCES"
+    }
   }
 }

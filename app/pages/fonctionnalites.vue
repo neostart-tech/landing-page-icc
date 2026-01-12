@@ -1,6 +1,11 @@
 <template>
+  <Breadcrumb 
+      :breadcrumb="breadcrumbItems" 
+    />
+
     <div class="bg-white">
-        <section class="max-w-7xl mx-auto px-5 lg:px-10 xl:px-14 py-16">
+      
+        <section class="max-w-7xl mx-auto px-8 lg:px-16 xl:px-24 2xl:px-32 py-16">
       <!-- HEADER -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start mb-10">
         <!-- LEFT -->
@@ -82,7 +87,7 @@
 
     <!-- Certification des comptes -->
 
-    <section class="py-16 px-6 lg:px-16 bg-['#FFFFFF']">
+    <section class="py-16 px-8 lg:px-16 xl:px-24 2xl:px-32 bg-white">
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 items-stretch">
 
       <!-- BLOC GAUCHE (PLUS GRAND) -->
@@ -125,7 +130,7 @@
     </div>
 
     <!-- Parc automobile & Validation des vehicules  -->
-    <section class="py-20 px-4 bg-white">
+    <section class="py-20 px-8 lg:px-16 xl:px-24 2xl:px-32 bg-white">
     <div class="max-w-6xl mx-auto">
 
       <!-- TITRE PRINCIPAL -->
@@ -186,8 +191,7 @@
   </section>
 
 
-  <section class="bg-[#3B0539] h-[400px] px-6 lg:px-16 mb-24 overflow-hidden">
-
+  <section class="bg-[#3B0539] h-[400px] px-8 lg:px-16 xl:px-24 2xl:px-32 mb-24 overflow-hidden">
 
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 h-full gap-10">
 
@@ -235,7 +239,7 @@
   </section>
 
   <!-- PROPOSER UN COVOITURAGE -->
-    <section class="max-w-7xl mx-auto px-5 lg:px-10 xl:px-14 py-16">
+    <section class="max-w-7xl mx-auto px-8 lg:px-16 xl:px-24 2xl:px-32 py-16">
       <!-- HEADER -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start mb-10">
         <!-- LEFT -->
@@ -304,7 +308,7 @@
 
     <!-- ================= DEMANDER UN COVOITURAGE ================= -->
     <section class="bg-[#F6EAF5] py-24">
-      <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div class="max-w-7xl mx-auto px-8 lg:px-16 xl:px-24 2xl:px-32 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
         <!-- IMAGE -->
         <img
@@ -348,7 +352,7 @@
 
     <!-- ================= MAP SECTION ================= -->
     <section class="bg-[#3B0539] py-24 text-white">
-    <div class="mx-auto px-5 lg:px-10 xl:px-14 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+    <div class="mx-auto px-8 lg:px-16 xl:px-24 2xl:px-32 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
     <!-- LEFT : TEXT -->
     <div class="pt-4">
@@ -394,15 +398,12 @@
   </div>
   </section>
 
-
-
-
-
-
-
-
-
-
-
-
 </template>
+
+<script setup>
+  import Breadcrumb from '~/components/Breadcrumb.vue';
+const breadcrumbItems = [
+  { label: 'Accueil', href: '/' },
+  { label: 'Fonctionnalités' } // Pas de href = texte actif
+]
+</script>

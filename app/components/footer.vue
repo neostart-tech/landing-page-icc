@@ -1,7 +1,7 @@
 <template>
   <footer class="bg-[#6a0d5f] text-white">
     <!-- Section principale -->
-    <div class="w-full px-5 lg:px-10 xl:px-14 py-16">
+    <div class="w-full px-8 lg:px-16 xl:px-24 2xl:px-32 py-16">
       <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-12">
         <!-- Colonne 1 : Logo + réseaux + newsletter -->
         <div class="space-y-8">
@@ -24,27 +24,27 @@
           <div class="flex gap-4">
             <a
               href="#"
-              class="w-9 h-9 rounded-full border border-white/60 flex items-center justify-center hover:bg-white hover:text-[#6a0d5f] transition"
+              class="w-9 h-9 rounded-full overflow-hidden border border-white/60 flex items-center justify-center hover:opacity-80 transition"
             >
-              <i class="fab fa-facebook-f text-sm"></i>
+              <img src="/icone/facebook.png" alt="Facebook" class="w-full h-full object-cover" />
             </a>
             <a
               href="#"
-              class="w-9 h-9 rounded-full border border-white/60 flex items-center justify-center hover:bg-white hover:text-[#6a0d5f] transition"
+              class="w-9 h-9 rounded-full overflow-hidden border border-white/60 flex items-center justify-center hover:opacity-80 transition"
             >
-              <i class="fab fa-tiktok text-sm"></i>
+              <img src="/icone/tiktok.png" alt="TikTok" class="w-full h-full object-cover" />
             </a>
             <a
               href="#"
-              class="w-9 h-9 rounded-full border border-white/60 flex items-center justify-center hover:bg-white hover:text-[#6a0d5f] transition"
+              class="w-9 h-9 rounded-full overflow-hidden border border-white/60 flex items-center justify-center hover:opacity-80 transition"
             >
-              <i class="fab fa-instagram text-sm"></i>
+              <img src="/icone/instagram.png" alt="Instagram" class="w-full h-full object-cover" />
             </a>
             <a
               href="#"
-              class="w-9 h-9 rounded-full border border-white/60 flex items-center justify-center hover:bg-white hover:text-[#6a0d5f] transition"
+              class="w-9 h-9 rounded-full overflow-hidden border border-white/60 flex items-center justify-center hover:opacity-80 transition"
             >
-              <i class="fab fa-youtube text-sm"></i>
+              <img src="/icone/youtube.png" alt="YouTube" class="w-full h-full object-cover" />
             </a>
           </div>
 
@@ -66,7 +66,7 @@
               <button
                 class="px-6 py-4 bg-[#7b1b6f] hover:bg-[#8d2a80] text-white font-medium rounded-r-lg transition"
               >
-                Je
+                ▶
               </button>
             </div>
 
