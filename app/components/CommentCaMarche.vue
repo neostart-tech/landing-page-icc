@@ -1,9 +1,9 @@
 <template>
-  <section class="py-20 px-8 lg:px-16 xl:px-24 2xl:px-32 bg-white">
+  <section class="py-16 px-8 lg:px-16 xl:px-24 2xl:px-32 bg-white">
     <div class="max-w-6xl mx-auto">
 
       <!-- TITRE PRINCIPAL -->
-      <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-center text-gray-900 mb-4">
+      <h1 class="text-xl md:text-2xl lg:text-3xl font-extrabold text-center text-gray-900 mb-4">
         Comment ça marche ?
       </h1>
 

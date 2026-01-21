@@ -3,9 +3,9 @@
     <div class="max-w-6xl mx-auto">
 
       <!-- TITRE -->
-      <h2 class="text-3xl md:text-4xl font-extrabold text-center text-gray-900 mb-4">
+      <h1 class="text-xl md:text-2xl lg:text-3xl font-extrabold text-center text-gray-900 mb-4">
         Restez connecté à nos actualités
-      </h2>
+      </h1>
 
       <!-- BOUTONS -->
       <div class="flex justify-center gap-4 mb-12">
