@@ -1,5 +1,6 @@
 <template>
     <HeroSection />
+    <NotreApp />
     <NosOffres/>
     <QuiPeutUtiliser />
     <CommentCaMarche />
@@ -8,7 +9,9 @@
 
 </template>
 <script setup>
+    
  import HeroSection from '~/components/HeroSection.vue';
+ import NotreApp from '~/components/NotreApp.vue';
  import NosOffres from '~/components/NosOffres.vue';
  import QuiPeutUtiliser from '~/components/QuiPeutUtiliser.vue';
  import CommentCaMarche from '~/components/CommentCaMarche.vue';

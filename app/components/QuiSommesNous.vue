@@ -18,7 +18,7 @@
     <div class="container mx-auto px-4 lg:px-8 max-w-6xl relative z-10">
       <!-- Titre -->
       <div class="text-center mb-12 lg:mb-16 animate-slide-up">
-        <h2 class="text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 tracking-tight">
+        <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-4 tracking-tight">
          <span class="text-white">Qui sommes-nous ?</span>
         </h2>
 

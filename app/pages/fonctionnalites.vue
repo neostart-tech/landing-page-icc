@@ -1,27 +1,23 @@
 <template>
-  <Breadcrumb 
-      :breadcrumb="breadcrumbItems" 
-    />
+  <Breadcrumb :breadcrumb="breadcrumbItems" />
 
     <div class="bg-white">
       
-        <section class="max-w-7xl mx-auto px-8 lg:px-16 xl:px-24 2xl:px-32 py-16">
+    <section class="max-w-7xl mx-auto px-8 lg:px-16 xl:px-24 2xl:px-32 py-16">
       <!-- HEADER -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start mb-10">
         <!-- LEFT -->
         <div>
-          <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
-            Création et vérification de <br />
-            compte
+          <h1 class="text-xl md:text-2xl lg:text-3xl font-extrabold text-gray-900 leading-tight">
+            Création et vérification <br />
+            de compte
           </h1>
         </div>
 
         <!-- RIGHT -->
         <p class="text-black text-sm leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
+          Créez votre compte en quelques minutes.
+          Une vérification est ensuite effectuée pour garantir l’authenticité des membres.
         </p>
       </div>
 
@@ -87,45 +83,98 @@
 
     <!-- Certification des comptes -->
 
-    <section class="py-16 px-8 lg:px-16 xl:px-24 2xl:px-32 bg-white">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 items-stretch">
+<section class="bg-white py-20 px-8 lg:px-16 xl:px-24 2xl:px-32">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-14 items-stretch">
 
-      <!-- BLOC GAUCHE (PLUS GRAND) -->
-      <div class="lg:col-span-2 bg-white p-10">
+    <!-- ================= LEFT SIDE ================= -->
+    <div class="lg:col-span-2">
 
-        <!-- Titre -->
-        <h2 class="text-3xl font-extrabold text-black mb-4">
-          Certification des comptes
-        </h2>
+      <!-- HEADER -->
+      <h2 class="text-3xl font-extrabold text-gray-900 mb-3">
+        Certification des comptes
+      </h2>
+      <p class="text-sm text-gray-600 max-w-xl mb-10">
+        Pour certifier son compte, l’utilisateur envoie :
+      </p>
 
-        <!-- Petit texte -->
-        <p class="text-black mb-8">
-          La certification des comptes permet de renforcer la confiance
-          et d’assurer une meilleure traçabilité des utilisateurs.
-        </p>
+      <!-- GRID CONTENT -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
-        <!-- Image -->
-        <img src="/images/certification-compte.png" alt="Certification" class="w-full max-w-md / sm mx-auto rounded-2xl"/>
+        <!-- 1. CNI -->
+        <div class="bg-[#7C0A6D] rounded-xl p-6 text-white">
+          <h4 class="font-bold mb-4">
+            1. Carte Nationale d’Identité (CNI)
+          </h4>
+
+          <div class="bg-white/10 rounded-lg h-32 flex items-center justify-center text-sm">
+            Photo d’une CNI recto verso
+          </div>
+        </div>
+
+        <!-- 2. PHOTO PROFIL -->
+        <div class="bg-gray-100 rounded-xl p-6 relative">
+          <h4 class="font-bold text-gray-900 mb-6">
+            2. Photo de profil
+          </h4>
+
+          <div class="flex items-center gap-6">
+            <!-- avatar -->
+            <img
+              src="/images/picture.jpg"
+              alt="Photo profil"
+              class="w-16 h-16 rounded-full object-cover"
+            />
+
+            <!-- arrow -->
+            <svg
+              class="w-10 h-10 text-[#7C0A6D]"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+
+            <!-- check -->
+            <div class="w-10 h-10 bg-[#7C0A6D] rounded-full flex items-center justify-center text-white">
+              ✓
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. BADGE (FULL WIDTH) -->
+        <div class="sm:col-span-2 bg-gray-100 rounded-xl p-6">
+          <h4 class="font-bold text-gray-900 mb-2">
+            3. Badge de certification
+          </h4>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Les administrateurs vérifient la conformité des informations et
+            valident ou rejettent la certification. Une fois certifié,
+            un badge apparaît sur le profil. Cela renforce la confiance
+            et facilite la traçabilité en cas d’incident.
+          </p>
+        </div>
 
       </div>
-
-      <!-- BLOC DROIT (PLUS PETIT) -->
-        <div class="bg-[#3B0539] rounded-2xl p-8 flex flex-col justify-between">
-        <!-- Titre -->
-        <h3 class="text-2xl font-extrabold text-white mb-6">
-          Votre sécurité, notre priorité !
-        </h3>
-
-        <!-- Image en bas -->
-        <img
-          src="/images/t.png"
-          alt="Application mobile"
-          class="w-full max-w-xs mx-auto"
-        />
-      </div>
-
     </div>
-    </section>
+
+    <!-- ================= RIGHT SIDE ================= -->
+    <div class="bg-[#3B0539] rounded-3xl p-10 flex flex-col justify-between">
+      <h3 class="text-white text-2xl font-extrabold leading-snug">
+        Votre sécurité, notre<br />priorité !
+      </h3>
+
+      <img
+        src="/images/t.png"
+        alt="Application mobile"
+        class="w-full max-w-xs mx-auto mt-10"
+      />
+    </div>
+
+  </div>
+</section>
+
     
     </div>
 
@@ -134,61 +183,59 @@
     <div class="max-w-6xl mx-auto">
 
       <!-- TITRE PRINCIPAL -->
-      <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-center text-black mb-4">
-        Parc automobile & Validation des vehicules
+      <h1 class="text-xl md:text-2xl lg:text-3xl font-bold text-center text-black mb-4">
+        Parc automobile & Validation des véhicules
       </h1>
 
       <!-- SOUS-TITRE -->
       <p class="text-base md:text-lg text-black max-w-2xl mx-auto mb-16 text-center">
-        Les administrateurs contrôlent chaque pièce et notifient l’utilisateur en cas d’acceptation ou de rejet. L’application envoie des rappels à 1 mois, 1 semaine, 3 jours, la veille, le jour J. Un véhicule ne peut plus servir au covoiturage 1 mois après expiration de ses pièces obligatoires.Pour proposer un covoiturage, l’utilisateur doit enregistrer ses véhicules avec : </p>
+        Les administrateurs valident chaque pièce et notifient l’utilisateur. Des rappels sont envoyés avant l’expiration. Un véhicule ne peut plus être utilisé pour le covoiturage si ses documents sont expirés. Pour proposer un covoiturage, l’utilisateur doit enregistrer son véhicule avec :
+      </p>
 
       <!-- BLOCS -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
         <!-- Bloc 1 -->
         <div class="bg-[#F5F5F5] text-black rounded-2xl p-6">
-            <img src="/icone/i4.png" alt="Illustration" class="w-12 h-12 mb-4 object-contain"/>
-
+          <img src="/icone/i4.png" alt="Illustration" class="w-12 h-12 mb-4 object-contain"/>
           <h3 class="text-lg font-extrabold mb-3">Carte grise</h3>
-            <p class="text-sm leading-relaxed ">
-                Document obligatoire permettant d’identifier officiellement le véhicule. Elle confirme la propriété ou l’autorisation d’usage et est nécessaire pour valider tout véhicule utilisé pour le covoiturage. 
-            </p>
+          <p class="text-sm leading-relaxed">
+            Document officiel d’identification du véhicule, obligatoire pour validation.
+          </p>
         </div>
 
         <!-- Bloc 2 -->
         <div class="bg-[#F5F5F5] text-black rounded-2xl p-6">
-            <img src="/icone/i4.png" alt="Illustration" class="w-12 h-12 mb-4 object-contain"/>
+          <img src="/icone/i4.png" alt="Illustration" class="w-12 h-12 mb-4 object-contain"/>
           <h3 class="text-lg font-extrabold mb-3">Assurance</h3>
-            <p class="text-sm leading-relaxed">
-                Elle garantit que le véhicule est couvert en cas d’incident. Requise pour les voitures et bus, elle n’est pas demandée pour les motos et les tricycles.
-            </p>
+          <p class="text-sm leading-relaxed">
+            Couverture en cas d’incident (obligatoire pour voitures et bus).
+          </p>
         </div>
 
         <!-- Bloc 3 -->
         <div class="bg-[#F5F5F5] text-black rounded-2xl p-6">
-            <img src="/icone/i4.png" alt="Illustration" class="w-12 h-12 mb-4 object-contain"/>
+          <img src="/icone/i4.png" alt="Illustration" class="w-12 h-12 mb-4 object-contain"/>
           <h3 class="text-lg font-extrabold mb-3">Visite technique</h3>
           <p class="text-sm leading-relaxed">
-            Ce contrôle atteste de la sécurité et du bon état du véhicule. Obligatoire pour les voitures et bus, mais non requis pour les motos et tricycles.
+            Contrôle de sécurité et d’état du véhicule (obligatoire pour voitures/bus).
           </p>
         </div>
 
         <!-- Bloc 4 -->
         <div class="bg-[#F5F5F5] text-black rounded-2xl p-6">
-            <img src="/icone/i4.png" alt="Illustration" class="w-12 h-12 mb-4 object-contain"/>
+          <img src="/icone/i4.png" alt="Illustration" class="w-12 h-12 mb-4 object-contain"/>
           <h3 class="text-lg font-extrabold mb-3">TVM</h3>
           <p class="text-sm leading-relaxed">
-            La Taxe de Véhicule à Moteur doit être à jour. Non exigée pour les motos, tricycles et les voitures dont la carte grise date de moins d’un an.
+            Taxe à jour (non exigée pour motos et tricycles).
           </p>
         </div>
 
       </div>
 
-      <div class="mt-20 text-center text-gray-400 text-sm">
-      </div>
-
     </div>
-  </section>
+    </section>
+
 
 
   <section class="bg-[#3B0539] h-[400px] px-8 lg:px-16 xl:px-24 2xl:px-32 mb-24 overflow-hidden">
@@ -244,17 +291,15 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start mb-10">
         <!-- LEFT -->
         <div>
-          <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
+          <h1 class="text-xl md:text-2xl lg:text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
             Proposer un covoiturage
           </h1>
         </div>
 
         <!-- RIGHT -->
         <p class="text-black text-sm leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
+          Proposez un trajet et partagez vos places disponibles avec d’autres utilisateurs.
+          Facilitez les déplacements tout en réduisant les coûts et l’empreinte carbone.
         </p>
       </div>
 
@@ -404,6 +449,6 @@
   import Breadcrumb from '~/components/Breadcrumb.vue';
 const breadcrumbItems = [
   { label: 'Accueil', href: '/' },
-  { label: 'Fonctionnalités' } // Pas de href = texte actif
+  { label: 'Fonctionnalités' }
 ]
 </script>

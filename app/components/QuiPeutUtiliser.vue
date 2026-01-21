@@ -18,9 +18,9 @@
     <div class="container mx-auto px-4 lg:px-8 max-w-6xl relative z-10">
       <!-- Titre -->
       <div class="text-center mb-12 lg:mb-16 animate-slide-up">
-        <h2 class="text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 tracking-tight">
+        <h1 class="text-xl md:text-2xl lg:text-3xl font-extrabold text-center text-gray-900 mb-4">
           Alors, <span class="text-white">Qui peut l'utiliser ?</span>
-        </h2>
+        </h1>
 
         <p class="text-base lg:text-lg text-white/80 max-w-2xl mx-auto leading-relaxed">
           Pour tous ceux qui servent et participent aux activités de l'église.

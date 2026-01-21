@@ -16,7 +16,7 @@
     <div class="relative z-10 max-w-7xl mx-auto px-8 lg:px-16 xl:px-24 2xl:px-32 w-full">
       <div class="max-w-2xl">
         <!-- Titre -->
-        <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+        <h1 class="text-xl md:text-2xl lg:text-3xl font-bold leading-tight">
           Rejoignez vos
           <span class="bg-[#8b1d7a] px-2 py-1 rounded-md">
             programmes
