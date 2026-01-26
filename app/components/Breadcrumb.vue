@@ -1,4 +1,3 @@
-<!-- components/HeroSection.vue -->
 <template>
   <section
     class="relative py-12 lg:py-20 lg:px-[160px] bg-cover bg-center bg-no-repeat overflow-hidden min-h-[50vh] flex items-center "
