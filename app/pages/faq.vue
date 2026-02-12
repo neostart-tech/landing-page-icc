@@ -9,10 +9,10 @@
       <!-- TITRE -->
       <div class="text-center mb-20">
         <h2 class="text-3xl lg:text-4xl font-extrabold text-black mb-6">
-          Des préoccupations ?
+          {{ $t('faq_page.title') }}
         </h2>
         <p class="text-black text-lg">
-          Parcourez notre foire aux questions <br><br><br>
+          {{ $t('faq_page.subtitle') }} <br><br><br>
         </p>
       </div>
 
@@ -76,12 +76,15 @@
 <script setup>
   
 import Breadcrumb from '~/components/Breadcrumb.vue';
-const breadcrumbItems = [
-  { label: 'Accueil', href: '/' },
-  { label: 'faq' } 
-]
-
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
+
+const breadcrumbItems = [
+  { label: t('breadcrumb.home'), href: '/' },
+  { label: t('nav.faq') } 
+]
 
 const activeIndex = ref(null)
 
@@ -91,24 +94,20 @@ const toggle = (index) => {
 
 const faqs = [
   {
-    question: "À qui est destinée l’application ICC Covoiturage ?",
-    answer:
-      "L’application ICC Covoiturage est destinée à tous les membres de l’église Impact Centre Chrétien (fidèles, serviteurs, responsables et visiteurs). Elle permet de faciliter les déplacements vers les cultes, réunions, formations et autres activités organisées par l’église.",
+    question: t('faq_page.questions.q1.question'),
+    answer: t('faq_page.questions.q1.answer'),
   },
   {
-    question: "Comment puis-je proposer ou demander un trajet ?",
-    answer:
-      "Après vous être connecté à l’application, vous pouvez soit proposer un trajet en tant que conducteur, soit demander un covoiturage en tant que passager. Il vous suffit d’indiquer votre lieu de départ, votre destination et l’activité concernée.",
+    question: t('faq_page.questions.q2.question'),
+    answer: t('faq_page.questions.q2.answer'),
   },
   {
-    question: "Le covoiturage est-il payant ?",
-    answer:
-      "Non. Le service ICC Covoiturage est totalement gratuit. Il repose sur un esprit de solidarité et de communion entre les membres de l’église afin de faciliter l’accès aux activités sans contrainte financière.",
+    question: t('faq_page.questions.q3.question'),
+    answer: t('faq_page.questions.q3.answer'),
   },
   {
-    question: "Puis-je suivre mon conducteur le jour du trajet ?",
-    answer:
-      "Oui. Une fois votre demande acceptée, vous pouvez suivre la position du conducteur en temps réel sur la carte intégrée. Vous recevez également une estimation du temps d’arrivée au point de rendez-vous.",
+    question: t('faq_page.questions.q4.question'),
+    answer: t('faq_page.questions.q4.answer'),
   },
 ];
 
