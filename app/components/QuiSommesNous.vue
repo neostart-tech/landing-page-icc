@@ -1,5 +1,5 @@
 <template>
-  <section id="quipeuutiliser" class="relative py-16 lg:py-20 overflow-hidden">
+  <section id="quipeuutiliser" class="relative py-12 md:py-16 lg:py-20 overflow-hidden">
     <!-- Background -->
     <div class="absolute inset-0">
       <img
@@ -11,25 +11,24 @@
     </div>
 
     <!-- Décors -->
-    <div class="absolute top-8 right-8 w-24 h-24 border border-white/15 rounded-full animate-pulse-slow"></div>
-    <div class="absolute bottom-12 left-8 w-20 h-20 border border-white/10 rounded-lg rotate-45 animate-float-medium"></div>
-    <div class="absolute top-1/2 left-1/4 w-12 h-12 border border-white/5 rounded-full animate-float-slow"></div>
+    <div class="absolute top-8 right-8 w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 border border-white/15 rounded-full animate-pulse-slow"></div>
+    <div class="absolute bottom-12 left-8 w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 border border-white/10 rounded-lg rotate-45 animate-float-medium"></div>
+    <div class="absolute top-1/2 left-1/4 w-10 h-10 md:w-12 md:h-12 border border-white/5 rounded-full animate-float-slow"></div>
 
-    <div class="container mx-auto px-4 lg:px-8 max-w-6xl relative z-10">
+    <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-8 max-w-6xl relative z-10">
       <!-- Titre -->
-      <div class="text-center mb-12 lg:mb-16 animate-slide-up">
-        <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-4 tracking-tight">
-         <span class="text-white">Qui sommes-nous ?</span>
+      <div class="text-center mb-10 md:mb-12 lg:mb-16 animate-slide-up">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 md:mb-4 tracking-tight px-4">
+         {{ $t('about.title') }}
         </h2>
 
-        <p class="text-base lg:text-lg text-white/80 max-w-2xl mx-auto leading-relaxed">
-          Impact Centre Chrétien du Togo est une église où l'amour de Dieu transforme des personnes ordinaires en de véritables conquérants, engagée à former des disciples et à impacter la société par l'amour et la vérité de l'Évangile. Elle rassemble une communauté vivante, passionnée par la présence de Dieu, le service et le développement personnel sous le leadership du Pasteur Herman FEHA. Afin de faciliter l'accès aux cultes et événements, l'église met à disposition une application de covoiturage.
+        <p class="text-sm sm:text-base md:text-lg text-white/80 max-w-2xl mx-auto leading-relaxed px-4">
+          {{ $t('about.description') }}
         </p>
 
-        <div class="flex justify-center mb-12">     
-      </div>
-      <button @click="openDownloadModal" class="px-5 py-2.5 bg-gradient-to-r from-[#840B7F] to-[#6E096A] text-white rounded-lg text-sm"> Voir plus </button>
-
+        <div class="flex justify-center mt-6 md:mt-8">     
+          <button @click="openDownloadModal" class="px-4 sm:px-5 py-2 sm:py-2.5 bg-gradient-to-r from-[#840B7F] to-[#6E096A] text-white rounded-lg text-xs sm:text-sm font-medium hover:shadow-lg transition-shadow">{{ $t('buttons.see_more') }}</button>
+        </div>
       </div>
 
 
