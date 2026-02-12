@@ -1,15 +1,15 @@
 <template>
   <div class="bg-white">
-    <Breadcrumb :breadcrumb="breadcrumbItems" />
-    
+    <BreadcrumbNav :breadcrumb="breadcrumbItems" />
+
     <!-- Composant actualites -->
-    <actualites />
+    <ActualitesSection />
   </div>
 </template>
 
 <script setup>
-import Breadcrumb from '~/components/Breadcrumb.vue'
-import actualites from '~/components/actualites.vue'
+import BreadcrumbNav from '~/components/BreadcrumbNav.vue'
+import ActualitesSection from '~/components/ActualitesSection.vue'
 
 const breadcrumbItems = [
   { label: 'Accueil', href: '/' },
