@@ -4,6 +4,20 @@ export default defineNuxtConfig({
   nitro: { preset: "static" },
   modules: ["@nuxt/eslint", "@nuxt/ui", "@nuxt/test-utils", "@nuxtjs/i18n"],
 
+  app: {
+    head: {
+      title: "ICC Covoiturage - Impact Centre Chrétien",
+      meta: [
+        { charset: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        { name: "description", content: "Plateforme de covoiturage solidaire pour les membres d'Impact Centre Chrétien du Togo" },
+      ],
+      link: [
+        { rel: "icon", type: "image/jpeg", href: "/logo/logo-icc.jpg" },
+      ],
+    },
+  },
+
   i18n: {
     defaultLocale: "fr",
     strategy: "no_prefix",
