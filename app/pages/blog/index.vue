@@ -55,7 +55,7 @@
             <div class="flex items-center justify-between text-xs text-gray-400">
               <span>{{ article.date }}</span>
               <span class="text-[#840B7F] font-semibold group-hover:underline">
-                Lire →
+                {{ $t('buttons.read') }} →
               </span>
             </div>
           </div>
@@ -68,7 +68,7 @@
         v-if="filteredArticles.length === 0"
         class="text-center text-gray-500 mt-20"
       >
-        Aucun article trouvé pour cette catégorie.
+        {{ $t('blog_page.no_articles') }}
       </div>
     </section>
   </div>
@@ -103,7 +103,7 @@ const articles = [
     excerpt: 'Un moment fort de partage autour de la mobilité...',
     image: '/images/f.jpg',
     date: '05 Novembre 2025',
-    category: 'Événement'
+    category: t('blog.filters.event')
   },
   {
     slug: 'nouvelle-application-mobile',
@@ -111,7 +111,7 @@ const articles = [
     excerpt: 'ICC Covoiturage arrive sur mobile...',
     image: '/images/f.jpg',
     date: '10 Décembre 2025',
-    category: 'Annonce'
+    category: t('blog.filters.announcement')
   },
   {
     slug: 'reservation-instantanee',
