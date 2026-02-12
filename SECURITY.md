@@ -308,19 +308,6 @@ Si vous découvrez une vulnérabilité de sécurité, veuillez nous la signaler 
 | Correction (selon gravité) | 7-14 jours |
 | Publication | Après correction et accord mutuel |
 
-### Récompenses (Bug Bounty)
-
-Nous offrons des récompenses pour les découvertes de vulnérabilités :
-
-| Gravité | Récompense | Critères |
-|---------|------------|----------|
-| 🔴 **Critique** | 500€ - 2000€ | RCE, SQLi, Auth Bypass |
-| 🟠 **Haute** | 200€ - 500€ | XSS stocké, CSRF critique |
-| 🟡 **Moyenne** | 50€ - 200€ | XSS réfléchi, Info Disclosure |
-| 🟢 **Basse** | Reconnaissance publique | Problèmes mineurs |
-
----
-
 ## 📋 Checklist de Sécurité
 
 ### Pour les Développeurs
