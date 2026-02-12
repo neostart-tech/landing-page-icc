@@ -17,7 +17,7 @@
           <div class="flex items-center gap-3 mt-4">
             <span class="w-10 h-[1px] bg-gray-300"></span>
             <p class="text-sm text-gray-500">
-              Publié le Mercredi 20 Octobre 2025
+              {{ $t('blog.published_on') }} Mercredi 20 Octobre 2025
             </p>
           </div>
         </div>
@@ -82,18 +82,18 @@
         <!-- TITLE + FILTER -->
         <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-10">
           <h2 class="text-2xl font-extrabold mb-4 md:mb-0 text-black">
-            Autres articles
+            {{ $t('blog.other_articles') }}
           </h2>
 
           <div class="flex gap-3">
             <button class="px-4 py-1.5 rounded-full bg-[#840B7F] text-white text-sm">
-              Mise à jour
+              {{ $t('blog.filters.update') }}
             </button>
             <button class="px-4 py-1.5 rounded-full border text-sm">
-              Événement
+              {{ $t('blog.filters.event') }}
             </button>
             <button class="px-4 py-1.5 rounded-full border text-sm">
-              Annonce
+              {{ $t('blog.filters.announcement') }}
             </button>
           </div>
         </div>
@@ -113,7 +113,7 @@
 
             <div class="p-5">
               <p class="text-xs text-gray-500 mb-2">
-                MISE À JOUR
+                {{ $t('blog.categories.update') }}
               </p>
 
               <h3 class="font-bold text-sm mb-3">
@@ -137,9 +137,13 @@
 </template>
 
 <script setup>
-  import Breadcrumb from '~/components/Breadcrumb.vue';
+import Breadcrumb from '~/components/Breadcrumb.vue';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
+
 const breadcrumbItems = [
-  { label: 'Accueil', href: '/' },
-  { label: 'Blog' } // Pas de href = texte actif
+  { label: t('breadcrumb.home'), href: '/' },
+  { label: t('nav.blog') }
 ]
 </script>
