@@ -1,28 +1,25 @@
 <template>
   <section class="py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-32 bg-[#F3F0F7]">
-
     <!-- TITRE -->
-      <div class="text-center mb-8 md:mb-12 lg:mb-14">
-        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-center text-gray-900 mb-3 md:mb-4 px-4">
+    <div class="text-center mb-8 md:mb-12 lg:mb-14">
+      <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-center text-gray-900 mb-3 md:mb-4 px-4">
         {{ $t('our_app.title') }}
-        </h1>
-        <p class="text-sm sm:text-base md:text-lg text-center text-gray-600 max-w-2xl mx-auto mb-8 md:mb-12 lg:mb-16 px-4">
-          Découvrez quelques captures d'écran de l'application en action.
-          Les différentes interfaces défilent pour vous donner un aperçu de l'expérience utilisateur.
-        </p>
-      </div>
-
+      </h1>
+      <p class="text-sm sm:text-base md:text-lg text-center text-gray-600 max-w-2xl mx-auto mb-8 md:mb-12 lg:mb-16 px-4">
+        Découvrez quelques captures d'écran de l'application en action.
+        Les différentes interfaces défilent pour vous donner un aperçu de l'expérience utilisateur.
+      </p>
+    </div>
 
     <!-- CAROUSEL -->
     <div class="relative overflow-hidden max-w-6xl mx-auto">
-
       <!-- FLÈCHE GAUCHE - cachée sur mobile -->
       <button
-        @click="prev"
         class="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2
                bg-white shadow-lg w-10 h-10 md:w-12 md:h-12 rounded-full
                items-center justify-center text-2xl md:text-3xl
                hover:bg-gray-100 transition z-20"
+        @click="prev"
       >
         ‹
       </button>
@@ -39,17 +36,17 @@
             :src="img"
             class="w-[180px] sm:w-[220px] md:w-[260px] lg:w-[280px] h-auto object-contain rounded-xl shadow-xl"
             alt="capture application"
-          />
+          >
         </div>
       </div>
 
       <!-- FLÈCHE DROITE - cachée sur mobile -->
       <button
-        @click="next"
         class="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2
                bg-white shadow-lg w-10 h-10 md:w-12 md:h-12 rounded-full
                items-center justify-center text-2xl md:text-3xl
                hover:bg-gray-100 transition z-20"
+        @click="next"
       >
         ›
       </button>
@@ -60,28 +57,27 @@
       <button
         v-for="(_, i) in images"
         :key="i"
-        @click="goTo(i)"
         class="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition"
         :class="index === i ? 'bg-violet-600 scale-110' : 'bg-violet-300'"
-      ></button>
+        @click="goTo(i)"
+      />
     </div>
 
     <!-- Boutons de navigation mobile -->
     <div class="flex md:hidden justify-center gap-4 mt-6">
       <button
-        @click="prev"
         class="bg-white shadow-lg w-10 h-10 rounded-full flex items-center justify-center text-2xl hover:bg-gray-100 transition"
+        @click="prev"
       >
         ‹
       </button>
       <button
-        @click="next"
         class="bg-white shadow-lg w-10 h-10 rounded-full flex items-center justify-center text-2xl hover:bg-gray-100 transition"
+        @click="next"
       >
         ›
       </button>
     </div>
-
   </section>
 </template>
 
