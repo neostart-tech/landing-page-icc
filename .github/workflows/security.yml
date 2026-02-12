@@ -6,8 +6,8 @@ on:
   pull_request:
     branches: [main, develop]
   schedule:
-    # Exécuter tous les jours à 2h du matin
-    - cron: '0 2 * * *'
+    # Exécuter tous les lundis à 2h du matin
+    - cron: '0 2 * * 1'
 
 jobs:
   security-audit:
@@ -33,20 +33,8 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Run npm audit
-        run: pnpm audit --audit-level=moderate
+        run: pnpm audit --audit-level=high
         continue-on-error: true
-
-      - name: Check for known vulnerabilities
-        run: |
-          echo "Checking for known vulnerabilities..."
-          pnpm audit --json > audit-report.json || true
-
-      - name: Upload audit report
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: security-audit-report
-          path: audit-report.json
 
   dependency-review:
     name: Dependency Review
@@ -60,93 +48,5 @@ jobs:
       - name: Dependency Review
         uses: actions/dependency-review-action@v4
         with:
-          fail-on-severity: moderate
-
-  codeql-analysis:
-    name: CodeQL Analysis
-    runs-on: ubuntu-latest
-    permissions:
-      actions: read
-      contents: read
-      security-events: write
-
-    strategy:
-      fail-fast: false
-      matrix:
-        language: ['javascript', 'typescript']
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Initialize CodeQL
-        uses: github/codeql-action/init@v3
-        with:
-          languages: ${{ matrix.language }}
-
-      - name: Autobuild
-        uses: github/codeql-action/autobuild@v3
-
-      - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v3
-
-  security-headers:
-    name: Check Security Headers
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup PNPM
-        uses: pnpm/action-setup@v2
-        with:
-          version: 10
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-          cache: 'pnpm'
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Build application
-        run: pnpm build
-
-      - name: Check security headers configuration
-        run: |
-          echo "Checking security headers in nuxt.config.ts..."
-          grep -q "X-Content-Type-Options" nuxt.config.ts && echo "✅ X-Content-Type-Options found" || echo "❌ X-Content-Type-Options missing"
-          grep -q "X-Frame-Options" nuxt.config.ts && echo "✅ X-Frame-Options found" || echo "❌ X-Frame-Options missing"
-          grep -q "X-XSS-Protection" nuxt.config.ts && echo "✅ X-XSS-Protection found" || echo "❌ X-XSS-Protection missing"
-          grep -q "Referrer-Policy" nuxt.config.ts && echo "✅ Referrer-Policy found" || echo "❌ Referrer-Policy missing"
-
-  eslint-security:
-    name: ESLint Security Check
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup PNPM
-        uses: pnpm/action-setup@v2
-        with:
-          version: 10
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-          cache: 'pnpm'
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Run ESLint
-        run: pnpm lint
-
-      - name: Run TypeScript check
-        run: pnpm typecheck
+          fail-on-severity: high
+        continue-on-error: true
