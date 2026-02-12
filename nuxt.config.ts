@@ -6,16 +6,18 @@ export default defineNuxtConfig({
 
   i18n: {
     defaultLocale: "fr",
-    strategy: "no_prefix", // pas de /fr ou /en dans l’URL
+    strategy: "no_prefix",
     locales: [
-      { code: "en", name: "English", file: "en.json" },
       { code: "fr", name: "Français", file: "fr.json" },
+      { code: "en", name: "English", file: "en.json" },
     ],
     langDir: "locales/",
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: "i18n_redirected",
+      redirectOn: "root",
       alwaysRedirect: false,
+      fallbackLocale: "fr",
     },
   },
 
@@ -27,6 +29,15 @@ export default defineNuxtConfig({
 
   routeRules: {
     "/": { prerender: true },
+    "/**": {
+      headers: {
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Permissions-Policy": "geolocation=(self), microphone=(), camera=()",
+      },
+    },
   },
 
   compatibilityDate: "2025-01-15",
