@@ -10,22 +10,21 @@
         <!-- LEFT : CONTACT INFOS -->
         <div class="flex flex-col justify-start">
           <h2 class="text-2xl text-black font-extrabold mb-5">
-            Contactez-nous !
+            {{ $t('contact.title') }}
           </h2>
 
           <p class="text-black mb-10 max-w-md">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            {{ $t('contact.description') }}
           </p>
 
           <ul class="space-y-6 text-black">
             <li class="flex items-center gap-4">
               <img src="/icone/a.png" alt="Téléphone" class="w-12 h-12" />
-              <span>(+228) 93 33 22 33</span>
+              <span>{{ $t('contact.phone') }}</span>
             </li>
             <li class="flex items-center gap-4">
               <img src="/icone/l.png" alt="Adresse" class="w-12 h-12" />
-              <span>Hountigomé, Lomé</span>
+              <span>{{ $t('contact.address') }}</span>
             </li>
             <li class="flex items-center gap-4">
               <img src="/icone/m.png" alt="Email" class="w-12 h-12" />
@@ -39,12 +38,12 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
             <input
               type="text"
-              placeholder="Nom"
+              :placeholder="$t('contact.form.first_name')"
               class="w-full border rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#840B7F]"
             />
             <input
               type="email"
-              placeholder="Email"
+              :placeholder="$t('contact.form.email')"
               class="w-full border rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#840B7F]"
             />
           </div>
@@ -52,19 +51,19 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
             <input
               type="text"
-              placeholder="Numéro de téléphone"
+              :placeholder="$t('contact.form.phone_number')"
               class="w-full border rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#840B7F]"
             />
             <input
               type="text"
-              placeholder="Objet du message"
+              :placeholder="$t('contact.form.subject')"
               class="w-full border rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#840B7F]"
             />
           </div>
 
           <textarea
             rows="4"
-            placeholder="Message"
+            :placeholder="$t('contact.form.message')"
             class="w-full border rounded-lg px-4 py-3 text-sm mb-8 focus:outline-none focus:ring-2 focus:ring-[#840B7F]"
           ></textarea>
 
@@ -72,7 +71,7 @@
             type="submit"
             class="w-full bg-[#840B7F] text-white py-3 rounded-lg font-semibold hover:bg-purple-800 transition"
           >
-            Envoyer
+            {{ $t('contact.form.send') }}
           </button>
         </form>
 
@@ -97,8 +96,12 @@
 
 <script setup>
 import Breadcrumb from '~/components/Breadcrumb.vue';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
+
 const breadcrumbItems = [
-  { label: 'Accueil', href: '/' },
-  { label: 'Contact' } // Pas de href = texte actif
+  { label: t('breadcrumb.home'), href: '/' },
+  { label: t('nav.contact') }
 ]
 </script>
