@@ -17,7 +17,9 @@
     "search": "Search",
     "see_more": "See more",
     "see_demo": "See Demo",
-    "subscribe": "Subscribe"
+    "subscribe": "Subscribe",
+    "read": "Read",
+    "read_more": "Read more"
   },
   "download": {
     "title": "Download the app",
@@ -180,5 +182,139 @@
       "update": "UPDATE",
       "announcements": "ANNOUNCEMENTS"
     }
+  },
+  "our_app": {
+    "title": "Our application",
+    "description": "Discover some screenshots of the application in action. The different interfaces scroll to give you an overview of the user experience."
+  },
+  "faq_page": {
+    "title": "Any concerns?",
+    "subtitle": "Browse our frequently asked questions",
+    "questions": {
+      "q1": {
+        "question": "Who is the ICC Carpooling application for?",
+        "answer": "The ICC Carpooling application is intended for all members of the Impact Christian Center church (faithful, servants, leaders and visitors). It facilitates travel to worship services, meetings, training sessions and other activities organized by the church."
+      },
+      "q2": {
+        "question": "How can I offer or request a ride?",
+        "answer": "After logging into the application, you can either offer a ride as a driver or request carpooling as a passenger. Simply indicate your starting point, destination and the activity concerned."
+      },
+      "q3": {
+        "question": "Is carpooling paid?",
+        "answer": "No. The ICC Carpooling service is completely free. It is based on a spirit of solidarity and fellowship among church members to facilitate access to activities without financial constraints."
+      },
+      "q4": {
+        "question": "Can I track my driver on the day of the trip?",
+        "answer": "Yes. Once your request is accepted, you can track the driver's position in real time on the integrated map. You also receive an estimated time of arrival at the meeting point."
+      }
+    }
+  },
+  "features_page": {
+    "account_creation": {
+      "title": "Account creation and verification",
+      "description": "Create your account in a few minutes. Verification is then carried out to guarantee the authenticity of members.",
+      "registration": {
+        "title": "Registration",
+        "description": "During registration, the user enters their local church as well as their impact family or department. This information allows them to be associated with the right church structure and ensures consistent monitoring of their profile. To secure access, the phone number is validated by an OTP code sent by SMS and the email address is confirmed via a verification link. Once registration is complete, the user can view activities, but some features remain limited until they have been recognized by their church."
+      },
+      "recognition": {
+        "title": "Mandatory recognition",
+        "description": "Before being able to offer or request carpooling, the account must be recognized as actually belonging to a church member. This recognition is carried out by pilots, co-pilots or department heads, and can also be provided by an administrator if necessary. Each manager receives a notification inviting them to verify and recognize pending accounts. This process constitutes a first security barrier, ensuring that only authenticated members access the full services of the application."
+      },
+      "badge": {
+        "title": "Recognition badge",
+        "description": "Once recognized by their local structure, the user sees an R badge appear on their profile. This badge indicates to other members that their identity within the church has been confirmed. The user also receives a notification informing them that they can now access the certification of their account, the next step to further strengthen trust within the community."
+      }
+    },
+    "certification": {
+      "title": "Account certification",
+      "description": "To certify their account, the user sends:",
+      "cni": "National Identity Card (CNI)",
+      "cni_description": "Photo of a front and back CNI",
+      "photo": "Profile photo",
+      "badge_title": "Certification badge",
+      "badge_description": "Administrators verify the conformity of the information and validate or reject the certification. Once certified, a badge appears on the profile. This strengthens trust and facilitates traceability in the event of an incident.",
+      "security_title": "Your security, our priority!"
+    },
+    "vehicle_park": {
+      "title": "Vehicle fleet & Vehicle validation",
+      "description": "Administrators validate each document and notify the user. Reminders are sent before expiration. A vehicle can no longer be used for carpooling if its documents have expired. To offer carpooling, the user must register their vehicle with:",
+      "carte_grise": {
+        "title": "Registration certificate",
+        "description": "Official vehicle identification document, mandatory for validation."
+      },
+      "assurance": {
+        "title": "Insurance",
+        "description": "Coverage in case of incident (mandatory for cars and buses)."
+      },
+      "visite_technique": {
+        "title": "Technical inspection",
+        "description": "Safety and vehicle condition check (mandatory for cars/buses)."
+      },
+      "tvm": {
+        "title": "TVM",
+        "description": "Up-to-date tax (not required for motorcycles and tricycles)."
+      }
+    },
+    "new_way": {
+      "title": "A new way to get to church, together"
+    },
+    "offer_ride": {
+      "title": "Offer carpooling",
+      "description": "Offer a ride and share your available seats with other users. Facilitate travel while reducing costs and carbon footprint.",
+      "choose_vehicle": {
+        "title": "Choose your vehicle",
+        "description": "Choose one of the vehicles you have registered in your vehicle fleet. Each vehicle must be validated beforehand to ensure compliance and safety of the trip."
+      },
+      "define_offer": {
+        "title": "Define your offer",
+        "description": "Indicate the number of available seats and choose the type of trip you want to offer: one way, return or round trip. This information will be visible to members concerned by the activity."
+      },
+      "specify_route": {
+        "title": "Specify your route",
+        "description": "Enter your starting point and, if necessary, your drop-off point for the return. For return trips, the activity address is automatically set as the default starting point."
+      }
+    },
+    "request_ride": {
+      "title": "Request carpooling",
+      "request": {
+        "title": "Request carpooling",
+        "description": "Easily find a ride to get to church. Simply create your request and let the community organize to welcome you in a nearby vehicle. Travel safely and in good spirits."
+      },
+      "driver_response": {
+        "title": "The driver responds to your request",
+        "description": "A community member accepts your request and confirms your seat. You are informed in real time so that your trip takes place without stress and in a friendly spirit."
+      },
+      "discuss_evaluate": {
+        "title": "Discuss and evaluate your trip",
+        "description": "Communicate easily with your driver or passengers before and after the trip. Share your impressions and leave a review to strengthen trust and solidarity within your community."
+      }
+    },
+    "geolocation": {
+      "title": "Geolocation & Map",
+      "visualize": {
+        "title": "View your trips in real time",
+        "description": "View the exact route to the activity location and follow the proposed trips directly on the map. Each address is displayed with precision to facilitate your travel."
+      },
+      "follow_driver": {
+        "title": "Follow your driver",
+        "description": "When a driver accepts your request, you can follow their position on the map in real time. The application also displays the estimated waiting time to the meeting point."
+      },
+      "find_closest": {
+        "title": "Find the closest trips",
+        "description": "The different carpooling offers are automatically sorted according to the distance between you and the driver. This allows you to choose the most practical and fastest trip."
+      }
+    }
+  },
+  "blog_page": {
+    "all": "All",
+    "no_articles": "No articles found for this category.",
+    "article_detail": {
+      "published_on": "Published on",
+      "other_articles": "Other articles"
+    }
+  },
+  "breadcrumb": {
+    "home": "Home"
   }
 }
