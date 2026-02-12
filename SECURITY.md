@@ -511,7 +511,7 @@ sudo ufw enable
 
 <div align="center">
 
-## 🛡️ Sécurité développée et maintenue par Dev GTW503
+## 🛡️ Dev GTW503
 
 © 2025 **NEO START TECHNOLOGIE** - Tous droits réservés
 
