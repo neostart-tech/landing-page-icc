@@ -9,15 +9,13 @@
         <!-- LEFT -->
         <div>
           <h1 class="text-xl md:text-2xl lg:text-3xl font-extrabold text-gray-900 leading-tight">
-            Création et vérification <br />
-            de compte
+            {{ $t('features_page.account_creation.title') }}
           </h1>
         </div>
 
         <!-- RIGHT -->
         <p class="text-black text-sm leading-relaxed">
-          Créez votre compte en quelques minutes.
-          Une vérification est ensuite effectuée pour garantir l’authenticité des membres.
+          {{ $t('features_page.account_creation.description') }}
         </p>
       </div>
 
@@ -29,17 +27,11 @@
     <img src="/icone/i1.png" alt="icone" class="w-20 h-20 mb-4" />
 
     <h3 class="text-lg font-extrabold text-gray-900 mb-2">
-      Inscription
+      {{ $t('features_page.account_creation.registration.title') }}
     </h3>
 
     <p class="text-sm text-gray-700 leading-relaxed">
-        Lors de son inscription, l'utilisateur renseigne son église locale ainsi que sa famille
-        d'impact ou son département. Ces informations permettent de l'associer à la bonne structure
-        de l'église et de garantir un suivi cohérent de son profil. Pour sécuriser l'accès, le numéro
-        de téléphone est validé par un code OTP envoyé par SMS et l'adresse email est confirmée via
-        un lien de vérification. Dès l'inscription terminée, l'utilisateur peut consulter les
-        activités, mais certaines fonctionnalités restent limitées tant qu'il n'a pas été reconnu
-        par son église.
+        {{ $t('features_page.account_creation.registration.description') }}
     </p>
   </div>
 
@@ -48,16 +40,11 @@
     <img src="/icone/i2.png" alt="icone" class="w25 h-20 mb-4" />
 
     <h3 class="text-lg font-extrabold text-gray-900 mb-2">
-      Reconnaissance obligatoire
+      {{ $t('features_page.account_creation.recognition.title') }}
     </h3>
 
     <p class="text-sm text-gray-700 leading-relaxed">
-        Avant de pouvoir proposer ou demander un covoiturage, le compte doit être reconnu comme
-        appartenant réellement à un membre de l'église. Cette reconnaissance est effectuée par les
-        pilotes, copilotes ou responsables de département, et peut également être assurée par un administrateur
-        si nécessaire. Chaque responsable reçoit une notification l'invitant à vérifier et reconnaître
-        les comptes en attente. Ce processus constitue une première barrière de sécurité, garantissant que seuls
-        les membres authentifiés accèdent aux services complets de l'application.
+        {{ $t('features_page.account_creation.recognition.description') }}
     </p>
   </div>
 
@@ -66,14 +53,11 @@
     <img src="/icone/i3.png" alt="icone" class="w-20 h-20 mb-4" />
 
     <h3 class="text-lg font-extrabold text-gray-900 mb-2">
-      Badge de reconnaissance
+      {{ $t('features_page.account_creation.badge.title') }}
     </h3>
 
     <p class="text-sm text-gray-700 leading-relaxed">
-        Une fois reconnu par sa structure locale, l'utilisateur voit apparaître un badge R sur son profil.
-        Ce badge indique aux autres membres que son identité au sein de l'église a été confirmée.
-        L'utilisateur reçoit également une notification l'informant qu'il peut désormais accéder à la certification
-        de son compte, étape suivante pour renforcer encore la confiance au sein de la communauté.
+        {{ $t('features_page.account_creation.badge.description') }}
     </p>
   </div>
 
@@ -91,10 +75,10 @@
 
       <!-- HEADER -->
       <h2 class="text-3xl font-extrabold text-gray-900 mb-3">
-        Certification des comptes
+        {{ $t('features_page.certification.title') }}
       </h2>
       <p class="text-sm text-gray-600 max-w-xl mb-10">
-        Pour certifier son compte, l’utilisateur envoie :
+        {{ $t('features_page.certification.description') }}
       </p>
 
       <!-- GRID CONTENT -->
@@ -103,18 +87,18 @@
         <!-- 1. CNI -->
         <div class="bg-[#7C0A6D] rounded-xl p-6 text-white">
           <h4 class="font-bold mb-4">
-            1. Carte Nationale d’Identité (CNI)
+            1. {{ $t('features_page.certification.cni') }}
           </h4>
 
           <div class="bg-white/10 rounded-lg h-32 flex items-center justify-center text-sm">
-            Photo d’une CNI recto verso
+            {{ $t('features_page.certification.cni_description') }}
           </div>
         </div>
 
         <!-- 2. PHOTO PROFIL -->
         <div class="bg-gray-100 rounded-xl p-6 relative">
           <h4 class="font-bold text-gray-900 mb-6">
-            2. Photo de profil
+            2. {{ $t('features_page.certification.photo') }}
           </h4>
 
           <div class="flex items-center gap-6">
@@ -146,13 +130,10 @@
         <!-- 3. BADGE (FULL WIDTH) -->
         <div class="sm:col-span-2 bg-gray-100 rounded-xl p-6">
           <h4 class="font-bold text-gray-900 mb-2">
-            3. Badge de certification
+            3. {{ $t('features_page.certification.badge_title') }}
           </h4>
           <p class="text-sm text-gray-600 leading-relaxed">
-            Les administrateurs vérifient la conformité des informations et
-            valident ou rejettent la certification. Une fois certifié,
-            un badge apparaît sur le profil. Cela renforce la confiance
-            et facilite la traçabilité en cas d’incident.
+            {{ $t('features_page.certification.badge_description') }}
           </p>
         </div>
 
@@ -162,7 +143,7 @@
     <!-- ================= RIGHT SIDE ================= -->
     <div class="bg-[#3B0539] rounded-3xl p-10 flex flex-col justify-between">
       <h3 class="text-white text-2xl font-extrabold leading-snug">
-        Votre sécurité, notre<br />priorité !
+        {{ $t('features_page.certification.security_title') }}
       </h3>
 
       <img
@@ -184,12 +165,12 @@
 
       <!-- TITRE PRINCIPAL -->
       <h1 class="text-xl md:text-2xl lg:text-3xl font-bold text-center text-black mb-4">
-        Parc automobile & Validation des véhicules
+        {{ $t('features_page.vehicle_park.title') }}
       </h1>
 
       <!-- SOUS-TITRE -->
       <p class="text-base md:text-lg text-black max-w-2xl mx-auto mb-16 text-center">
-        Les administrateurs valident chaque pièce et notifient l’utilisateur. Des rappels sont envoyés avant l’expiration. Un véhicule ne peut plus être utilisé pour le covoiturage si ses documents sont expirés. Pour proposer un covoiturage, l’utilisateur doit enregistrer son véhicule avec :
+        {{ $t('features_page.vehicle_park.description') }}
       </p>
 
       <!-- BLOCS -->
@@ -198,36 +179,36 @@
         <!-- Bloc 1 -->
         <div class="bg-[#F5F5F5] text-black rounded-2xl p-6">
           <img src="/icone/i4.png" alt="Illustration" class="w-12 h-12 mb-4 object-contain"/>
-          <h3 class="text-lg font-extrabold mb-3">Carte grise</h3>
+          <h3 class="text-lg font-extrabold mb-3">{{ $t('features_page.vehicle_park.carte_grise.title') }}</h3>
           <p class="text-sm leading-relaxed">
-            Document officiel d’identification du véhicule, obligatoire pour validation.
+            {{ $t('features_page.vehicle_park.carte_grise.description') }}
           </p>
         </div>
 
         <!-- Bloc 2 -->
         <div class="bg-[#F5F5F5] text-black rounded-2xl p-6">
           <img src="/icone/i4.png" alt="Illustration" class="w-12 h-12 mb-4 object-contain"/>
-          <h3 class="text-lg font-extrabold mb-3">Assurance</h3>
+          <h3 class="text-lg font-extrabold mb-3">{{ $t('features_page.vehicle_park.assurance.title') }}</h3>
           <p class="text-sm leading-relaxed">
-            Couverture en cas d’incident (obligatoire pour voitures et bus).
+            {{ $t('features_page.vehicle_park.assurance.description') }}
           </p>
         </div>
 
         <!-- Bloc 3 -->
         <div class="bg-[#F5F5F5] text-black rounded-2xl p-6">
           <img src="/icone/i4.png" alt="Illustration" class="w-12 h-12 mb-4 object-contain"/>
-          <h3 class="text-lg font-extrabold mb-3">Visite technique</h3>
+          <h3 class="text-lg font-extrabold mb-3">{{ $t('features_page.vehicle_park.visite_technique.title') }}</h3>
           <p class="text-sm leading-relaxed">
-            Contrôle de sécurité et d’état du véhicule (obligatoire pour voitures/bus).
+            {{ $t('features_page.vehicle_park.visite_technique.description') }}
           </p>
         </div>
 
         <!-- Bloc 4 -->
         <div class="bg-[#F5F5F5] text-black rounded-2xl p-6">
           <img src="/icone/i4.png" alt="Illustration" class="w-12 h-12 mb-4 object-contain"/>
-          <h3 class="text-lg font-extrabold mb-3">TVM</h3>
+          <h3 class="text-lg font-extrabold mb-3">{{ $t('features_page.vehicle_park.tvm.title') }}</h3>
           <p class="text-sm leading-relaxed">
-            Taxe à jour (non exigée pour motos et tricycles).
+            {{ $t('features_page.vehicle_park.tvm.description') }}
           </p>
         </div>
 
@@ -244,7 +225,7 @@
 
       <!-- GAUCHE : Texte + boutons -->
       <div class="flex flex-col justify-center text-white space-y-16">
-          <h2 class="text-2xl md:text-3xl font-extrabold">Une nouvelle façon de se rendre à l’église, ensemble </h2>
+          <h2 class="text-2xl md:text-3xl font-extrabold">{{ $t('features_page.new_way.title') }}</h2>
 
         <div class="flex flex-col sm:flex-row gap-3 mt-2">
           <a
@@ -257,7 +238,7 @@
                 class="h-6 w-auto"
               />
               <span class="text-sm font-medium">
-                Télécharger sur Play Store
+                {{ $t('download.play_store') }}
               </span>
             </a>
 
@@ -271,7 +252,7 @@
                 class="h-6 w-auto"
               />
               <span class="text-sm font-medium">
-                Disponible sur App Store
+                {{ $t('download.app_store') }}
               </span>
             </a>
         </div>
@@ -292,14 +273,13 @@
         <!-- LEFT -->
         <div>
           <h1 class="text-xl md:text-2xl lg:text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
-            Proposer un covoiturage
+            {{ $t('features_page.offer_ride.title') }}
           </h1>
         </div>
 
         <!-- RIGHT -->
         <p class="text-black text-sm leading-relaxed">
-          Proposez un trajet et partagez vos places disponibles avec d’autres utilisateurs.
-          Facilitez les déplacements tout en réduisant les coûts et l’empreinte carbone.
+          {{ $t('features_page.offer_ride.description') }}
         </p>
       </div>
 
@@ -311,11 +291,11 @@
       <img src="/icone/a1.png" alt="icone" class="w-12 h-12 mb-4 mx-auto" />
 
       <h3 class="text-lg font-extrabold text-black mb-2 text-center">
-        Choisissez votre véhicule
+        {{ $t('features_page.offer_ride.choose_vehicle.title') }}
       </h3>
 
       <p class="text-sm text-black leading-relaxed text-center">
-          Choisissez l’un des véhicules que vous avez enregistrés dans votre parc automobile. Chaque véhicule doit être validé au préalable pour assurer la conformité et la sécurité du trajet.
+          {{ $t('features_page.offer_ride.choose_vehicle.description') }}
       </p>
     </div>
 
@@ -324,12 +304,11 @@
     <img src="/icone/a2.png" alt="icone" class="w-12 h-12 mb-4 mx-auto" />
 
     <h3 class="text-lg font-extrabold text-black mb-2 text-center">
-      Définissez votre offre
+      {{ $t('features_page.offer_ride.define_offer.title') }}
     </h3>
 
     <p class="text-sm text-black leading-relaxed text-center">
-      Indiquez le nombre de places disponibles et choisissez le type de trajet que vous souhaitez proposer :
-      aller simple, retour ou aller–retour. Ces informations seront visibles par les membres concernés par l’activité.
+      {{ $t('features_page.offer_ride.define_offer.description') }}
     </p>
     </div>
 
@@ -339,11 +318,11 @@
       <img src="/icone/a3.png" alt="icone" class="w-12 h-12 mb-4 mx-auto" />
 
       <h3 class="text-lg font-extrabold text-black mb-2 text-center">
-        Précisez votre itinéraire
+        {{ $t('features_page.offer_ride.specify_route.title') }}
       </h3>
 
       <p class="text-sm text-black leading-relaxed text-center">
-          Entrez votre point de départ et, si nécessaire, votre point de chute pour le retour. Pour les trajets retour, l’adresse de l’activité est automatiquement définie comme point de départ par défaut.
+          {{ $t('features_page.offer_ride.specify_route.description') }}
       </p>
     </div>
 
@@ -364,29 +343,29 @@
         <!-- TEXT -->
         <div>
           <h2 class="text-3xl font-extrabold mb-6 text-black">
-            Demander un covoiturage
+            {{ $t('features_page.request_ride.title') }}
           </h2>
 
           <ul class="space-y-4 text-black">
             <li>
               <span class="font-bold text-lg">
-                <span class="text-[#8532A6]">↗</span> Demander un covoiturage
+                <span class="text-[#8532A6]">↗</span> {{ $t('features_page.request_ride.request.title') }}
               </span>
-              <p class="pl-5 mt-1 text-sm text-black">Trouvez facilement un trajet pour vous rendre à l’église. Il vous suffit de créer votre demande et de laisser la communauté s’organiser pour vous accueillir dans un véhicule proche. Voyagez en toute sécurité et dans la bonne humeur. </p>
+              <p class="pl-5 mt-1 text-sm text-black">{{ $t('features_page.request_ride.request.description') }}</p>
             </li>
 
             <li>
               <span class="font-bold text-lg">
-                <span class="text-[#8532A6]">↗</span> Le conducteur répond à votre demande
+                <span class="text-[#8532A6]">↗</span> {{ $t('features_page.request_ride.driver_response.title') }}
               </span>
-              <p class="pl-5 mt-1 text-sm text-black">Un membre de la communauté accepte votre demande et vous confirme votre place. Vous êtes informé en temps réel pour que votre trajet se déroule sans stress et dans un esprit convivial. </p>
+              <p class="pl-5 mt-1 text-sm text-black">{{ $t('features_page.request_ride.driver_response.description') }}</p>
             </li>
 
             <li>
               <span class="font-bold text-lg">
-                <span class="text-[#8532A6]">↗</span> Discutez et évaluez votre trajet
+                <span class="text-[#8532A6]">↗</span> {{ $t('features_page.request_ride.discuss_evaluate.title') }}
               </span>
-              <p class="pl-5 mt-1 text-sm text-black">Communiquez facilement avec votre conducteur ou vos passagers avant et après le trajet. Partagez vos impressions et laissez un avis pour renforcer la confiance et la solidarité au sein de votre communauté. </p>
+              <p class="pl-5 mt-1 text-sm text-black">{{ $t('features_page.request_ride.discuss_evaluate.description') }}</p>
             </li>
 
           </ul>
@@ -402,34 +381,34 @@
     <!-- LEFT : TEXT -->
     <div class="pt-4">
       <h2 class="text-3xl font-extrabold mb-8">
-        Géolocalisation & Map
+        {{ $t('features_page.geolocation.title') }}
       </h2>
 
       <ul class="space-y-6 text-white">
         <li>
           <span class="font-bold text-lg">
-            <span class="text-pink-400">↗</span> Visualisez vos trajets en temps réel
+            <span class="text-pink-400">↗</span> {{ $t('features_page.geolocation.visualize.title') }}
           </span>
           <p class="pl-5 mt-1 text-sm text-white">
-            Consultez l'itinéraire exact vers le lieu de l'activité et suivez les trajets proposés directement sur la carte. Chaque adresse est affichée avec précision pour faciliter votre déplacement.
+            {{ $t('features_page.geolocation.visualize.description') }}
           </p>
         </li>
 
         <li>
           <span class="font-bold text-lg">
-            <span class="text-pink-400">↗</span> Suivez votre conducteur
+            <span class="text-pink-400">↗</span> {{ $t('features_page.geolocation.follow_driver.title') }}
           </span>
           <p class="pl-5 mt-1 text-sm text-white">
-            Lorsqu'un conducteur accepte votre demande, vous pouvez suivre sa position sur la carte en temps réel. L'application affiche également le temps d'attente estimé jusqu'au point de rendez-vous.
+            {{ $t('features_page.geolocation.follow_driver.description') }}
           </p>
         </li>
 
         <li>
           <span class="font-bold text-lg">
-            <span class="text-pink-400">↗</span> Trouvez les trajets les plus proches
+            <span class="text-pink-400">↗</span> {{ $t('features_page.geolocation.find_closest.title') }}
           </span>
           <p class="pl-5 mt-1 text-sm text-white">
-            Les différentes offres de covoiturage sont automatiquement triées selon la distance entre vous et le conducteur. Cela vous permet de choisir le trajet le plus pratique et le plus rapide.
+            {{ $t('features_page.geolocation.find_closest.description') }}
           </p>
         </li>
       </ul>
@@ -446,9 +425,13 @@
 </template>
 
 <script setup>
-  import Breadcrumb from '~/components/Breadcrumb.vue';
+import Breadcrumb from '~/components/Breadcrumb.vue';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
+
 const breadcrumbItems = [
-  { label: 'Accueil', href: '/' },
-  { label: 'Fonctionnalités' }
+  { label: t('breadcrumb.home'), href: '/' },
+  { label: t('nav.features') }
 ]
 </script>
