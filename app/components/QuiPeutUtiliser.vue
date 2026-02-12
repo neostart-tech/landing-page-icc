@@ -1,5 +1,5 @@
 <template>
-  <section id="quipeuutiliser" class="relative py-16 lg:py-20 overflow-hidden">
+  <section id="quipeuutiliser" class="relative py-12 md:py-16 lg:py-20 overflow-hidden">
     <!-- Background -->
     <div class="absolute inset-0">
       <img
@@ -11,58 +11,58 @@
     </div>
 
     <!-- Décors -->
-    <div class="absolute top-8 right-8 w-24 h-24 border border-white/15 rounded-full animate-pulse-slow"></div>
-    <div class="absolute bottom-12 left-8 w-20 h-20 border border-white/10 rounded-lg rotate-45 animate-float-medium"></div>
-    <div class="absolute top-1/2 left-1/4 w-12 h-12 border border-white/5 rounded-full animate-float-slow"></div>
+    <div class="absolute top-8 right-8 w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 border border-white/15 rounded-full animate-pulse-slow"></div>
+    <div class="absolute bottom-12 left-8 w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 border border-white/10 rounded-lg rotate-45 animate-float-medium"></div>
+    <div class="absolute top-1/2 left-1/4 w-10 h-10 md:w-12 md:h-12 border border-white/5 rounded-full animate-float-slow"></div>
 
-    <div class="container mx-auto px-4 lg:px-8 max-w-6xl relative z-10">
+    <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-8 max-w-6xl relative z-10">
       <!-- Titre -->
-      <div class="text-center mb-12 lg:mb-16 animate-slide-up">
-        <h1 class="text-xl md:text-2xl lg:text-3xl font-extrabold text-center text-gray-900 mb-4">
-          Alors, <span class="text-white">Qui peut l'utiliser ?</span>
+      <div class="text-center mb-10 md:mb-12 lg:mb-16 animate-slide-up">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-center text-white mb-3 md:mb-4 px-4">
+          {{ $t('who_can_use.title') }}
         </h1>
 
-        <p class="text-base lg:text-lg text-white/80 max-w-2xl mx-auto leading-relaxed">
-          Pour tous ceux qui servent et participent aux activités de l'église.
+        <p class="text-sm sm:text-base md:text-lg text-white/80 max-w-2xl mx-auto leading-relaxed px-4">
+          {{ $t('who_can_use.subtitle') }}
         </p>
       </div>
 
       <!-- CARTES -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 cards-section">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 cards-section">
         
         <!-- Bloc 1 -->
-        <div class="valeur-card animate-card-1 bg-white/10 backdrop-blur-md rounded-2xl p-6 text-white border border-white/10">
-          <img src="/images/valid-vector-icon.png" alt="icon" class="w-10 h-10 mb-4 mx-auto" />
-          <h3 class="text-lg font-semibold mb-2">Les fidèles</h3>
-          <p class="text-sm text-white/80 leading-relaxed">
-            Tous les membres des églises ICC au Togo
+        <div class="valeur-card animate-card-1 bg-white/10 backdrop-blur-md rounded-2xl p-4 sm:p-5 md:p-6 text-white border border-white/10 hover:bg-white/15 transition-colors">
+          <img src="/images/valid-vector-icon.png" alt="icon" class="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 mb-3 md:mb-4 mx-auto" />
+          <h3 class="text-base sm:text-lg font-semibold mb-2 text-center">{{ $t('who_can_use.cards.faithful.title') }}</h3>
+          <p class="text-xs sm:text-sm text-white/80 leading-relaxed text-center">
+            {{ $t('who_can_use.cards.faithful.description') }}
           </p>
         </div>
 
         <!-- Bloc 2 -->
-        <div class="valeur-card animate-card-2 bg-white/10 backdrop-blur-md rounded-2xl p-6 text-white border border-white/10">
-          <img src="/images/valid-vector-icon.png" alt="icon" class="w-10 h-10 mb-4 mx-auto" />
-          <h3 class="text-lg font-semibold mb-2">Les S.T.A.R</h3>
-          <p class="text-sm text-white/80 leading-relaxed">
-            Les serviteurs et servantes des départements des églises ICC
+        <div class="valeur-card animate-card-2 bg-white/10 backdrop-blur-md rounded-2xl p-4 sm:p-5 md:p-6 text-white border border-white/10 hover:bg-white/15 transition-colors">
+          <img src="/images/valid-vector-icon.png" alt="icon" class="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 mb-3 md:mb-4 mx-auto" />
+          <h3 class="text-base sm:text-lg font-semibold mb-2 text-center">{{ $t('who_can_use.cards.stars.title') }}</h3>
+          <p class="text-xs sm:text-sm text-white/80 leading-relaxed text-center">
+            {{ $t('who_can_use.cards.stars.description') }}
           </p>
         </div>
 
         <!-- Bloc 3 -->
-        <div class="valeur-card animate-card-3 bg-white/10 backdrop-blur-md rounded-2xl p-6 text-white border border-white/10">
-          <img src="/images/valid-vector-icon.png" alt="icon" class="w-10 h-10 mb-4 mx-auto" />
-          <h3 class="text-lg font-semibold mb-2">Famille d'impact</h3>
-          <p class="text-sm text-white/80 leading-relaxed">
-            Les responsables dans les églises ICC (Pasteurs, Assistants Pasteurs)
+        <div class="valeur-card animate-card-3 bg-white/10 backdrop-blur-md rounded-2xl p-4 sm:p-5 md:p-6 text-white border border-white/10 hover:bg-white/15 transition-colors">
+          <img src="/images/valid-vector-icon.png" alt="icon" class="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 mb-3 md:mb-4 mx-auto" />
+          <h3 class="text-base sm:text-lg font-semibold mb-2 text-center">{{ $t('who_can_use.cards.impact_family.title') }}</h3>
+          <p class="text-xs sm:text-sm text-white/80 leading-relaxed text-center">
+            {{ $t('who_can_use.cards.impact_family.description') }}
           </p>
         </div>
 
         <!-- Bloc 4 -->
-        <div class="valeur-card animate-fade-in bg-white/10 backdrop-blur-md rounded-2xl p-6 text-white border border-white/10">
-          <img src="/images/valid-vector-icon.png"  alt="icon" class="w-10 h-10 mb-4 mx-auto"  />
-          <h3 class="text-lg font-semibold mb-2">Les Bergers</h3>
-          <p class="text-sm text-white/80 leading-relaxed">
-            Les responsables dans les églises ICC (Pasteurs, Assistants Pasteurs)
+        <div class="valeur-card animate-fade-in bg-white/10 backdrop-blur-md rounded-2xl p-4 sm:p-5 md:p-6 text-white border border-white/10 hover:bg-white/15 transition-colors">
+          <img src="/images/valid-vector-icon.png"  alt="icon" class="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 mb-3 md:mb-4 mx-auto"  />
+          <h3 class="text-base sm:text-lg font-semibold mb-2 text-center">{{ $t('who_can_use.cards.shepherds.title') }}</h3>
+          <p class="text-xs sm:text-sm text-white/80 leading-relaxed text-center">
+            {{ $t('who_can_use.cards.shepherds.description') }}
           </p>
         </div>
 
