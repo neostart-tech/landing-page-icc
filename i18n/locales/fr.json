@@ -17,7 +17,9 @@
     "search": "Rechercher",
     "see_more": "Voir plus",
     "see_demo": "Voir Demo",
-    "subscribe": "Je"
+    "subscribe": "Je",
+    "read": "Lire",
+    "read_more": "Lire la suite"
   },
   "download": {
     "title": "Télécharger l'application",
@@ -180,5 +182,139 @@
       "update": "MISE À JOUR",
       "announcements": "ANNONCES"
     }
+  },
+  "our_app": {
+    "title": "Notre application",
+    "description": "Découvrez quelques captures d'écran de l'application en action. Les différentes interfaces défilent pour vous donner un aperçu de l'expérience utilisateur."
+  },
+  "faq_page": {
+    "title": "Des préoccupations ?",
+    "subtitle": "Parcourez notre foire aux questions",
+    "questions": {
+      "q1": {
+        "question": "À qui est destinée l'application ICC Covoiturage ?",
+        "answer": "L'application ICC Covoiturage est destinée à tous les membres de l'église Impact Centre Chrétien (fidèles, serviteurs, responsables et visiteurs). Elle permet de faciliter les déplacements vers les cultes, réunions, formations et autres activités organisées par l'église."
+      },
+      "q2": {
+        "question": "Comment puis-je proposer ou demander un trajet ?",
+        "answer": "Après vous être connecté à l'application, vous pouvez soit proposer un trajet en tant que conducteur, soit demander un covoiturage en tant que passager. Il vous suffit d'indiquer votre lieu de départ, votre destination et l'activité concernée."
+      },
+      "q3": {
+        "question": "Le covoiturage est-il payant ?",
+        "answer": "Non. Le service ICC Covoiturage est totalement gratuit. Il repose sur un esprit de solidarité et de communion entre les membres de l'église afin de faciliter l'accès aux activités sans contrainte financière."
+      },
+      "q4": {
+        "question": "Puis-je suivre mon conducteur le jour du trajet ?",
+        "answer": "Oui. Une fois votre demande acceptée, vous pouvez suivre la position du conducteur en temps réel sur la carte intégrée. Vous recevez également une estimation du temps d'arrivée au point de rendez-vous."
+      }
+    }
+  },
+  "features_page": {
+    "account_creation": {
+      "title": "Création et vérification de compte",
+      "description": "Créez votre compte en quelques minutes. Une vérification est ensuite effectuée pour garantir l'authenticité des membres.",
+      "registration": {
+        "title": "Inscription",
+        "description": "Lors de son inscription, l'utilisateur renseigne son église locale ainsi que sa famille d'impact ou son département. Ces informations permettent de l'associer à la bonne structure de l'église et de garantir un suivi cohérent de son profil. Pour sécuriser l'accès, le numéro de téléphone est validé par un code OTP envoyé par SMS et l'adresse email est confirmée via un lien de vérification. Dès l'inscription terminée, l'utilisateur peut consulter les activités, mais certaines fonctionnalités restent limitées tant qu'il n'a pas été reconnu par son église."
+      },
+      "recognition": {
+        "title": "Reconnaissance obligatoire",
+        "description": "Avant de pouvoir proposer ou demander un covoiturage, le compte doit être reconnu comme appartenant réellement à un membre de l'église. Cette reconnaissance est effectuée par les pilotes, copilotes ou responsables de département, et peut également être assurée par un administrateur si nécessaire. Chaque responsable reçoit une notification l'invitant à vérifier et reconnaître les comptes en attente. Ce processus constitue une première barrière de sécurité, garantissant que seuls les membres authentifiés accèdent aux services complets de l'application."
+      },
+      "badge": {
+        "title": "Badge de reconnaissance",
+        "description": "Une fois reconnu par sa structure locale, l'utilisateur voit apparaître un badge R sur son profil. Ce badge indique aux autres membres que son identité au sein de l'église a été confirmée. L'utilisateur reçoit également une notification l'informant qu'il peut désormais accéder à la certification de son compte, étape suivante pour renforcer encore la confiance au sein de la communauté."
+      }
+    },
+    "certification": {
+      "title": "Certification des comptes",
+      "description": "Pour certifier son compte, l'utilisateur envoie :",
+      "cni": "Carte Nationale d'Identité (CNI)",
+      "cni_description": "Photo d'une CNI recto verso",
+      "photo": "Photo de profil",
+      "badge_title": "Badge de certification",
+      "badge_description": "Les administrateurs vérifient la conformité des informations et valident ou rejettent la certification. Une fois certifié, un badge apparaît sur le profil. Cela renforce la confiance et facilite la traçabilité en cas d'incident.",
+      "security_title": "Votre sécurité, notre priorité !"
+    },
+    "vehicle_park": {
+      "title": "Parc automobile & Validation des véhicules",
+      "description": "Les administrateurs valident chaque pièce et notifient l'utilisateur. Des rappels sont envoyés avant l'expiration. Un véhicule ne peut plus être utilisé pour le covoiturage si ses documents sont expirés. Pour proposer un covoiturage, l'utilisateur doit enregistrer son véhicule avec :",
+      "carte_grise": {
+        "title": "Carte grise",
+        "description": "Document officiel d'identification du véhicule, obligatoire pour validation."
+      },
+      "assurance": {
+        "title": "Assurance",
+        "description": "Couverture en cas d'incident (obligatoire pour voitures et bus)."
+      },
+      "visite_technique": {
+        "title": "Visite technique",
+        "description": "Contrôle de sécurité et d'état du véhicule (obligatoire pour voitures/bus)."
+      },
+      "tvm": {
+        "title": "TVM",
+        "description": "Taxe à jour (non exigée pour motos et tricycles)."
+      }
+    },
+    "new_way": {
+      "title": "Une nouvelle façon de se rendre à l'église, ensemble"
+    },
+    "offer_ride": {
+      "title": "Proposer un covoiturage",
+      "description": "Proposez un trajet et partagez vos places disponibles avec d'autres utilisateurs. Facilitez les déplacements tout en réduisant les coûts et l'empreinte carbone.",
+      "choose_vehicle": {
+        "title": "Choisissez votre véhicule",
+        "description": "Choisissez l'un des véhicules que vous avez enregistrés dans votre parc automobile. Chaque véhicule doit être validé au préalable pour assurer la conformité et la sécurité du trajet."
+      },
+      "define_offer": {
+        "title": "Définissez votre offre",
+        "description": "Indiquez le nombre de places disponibles et choisissez le type de trajet que vous souhaitez proposer : aller simple, retour ou aller–retour. Ces informations seront visibles par les membres concernés par l'activité."
+      },
+      "specify_route": {
+        "title": "Précisez votre itinéraire",
+        "description": "Entrez votre point de départ et, si nécessaire, votre point de chute pour le retour. Pour les trajets retour, l'adresse de l'activité est automatiquement définie comme point de départ par défaut."
+      }
+    },
+    "request_ride": {
+      "title": "Demander un covoiturage",
+      "request": {
+        "title": "Demander un covoiturage",
+        "description": "Trouvez facilement un trajet pour vous rendre à l'église. Il vous suffit de créer votre demande et de laisser la communauté s'organiser pour vous accueillir dans un véhicule proche. Voyagez en toute sécurité et dans la bonne humeur."
+      },
+      "driver_response": {
+        "title": "Le conducteur répond à votre demande",
+        "description": "Un membre de la communauté accepte votre demande et vous confirme votre place. Vous êtes informé en temps réel pour que votre trajet se déroule sans stress et dans un esprit convivial."
+      },
+      "discuss_evaluate": {
+        "title": "Discutez et évaluez votre trajet",
+        "description": "Communiquez facilement avec votre conducteur ou vos passagers avant et après le trajet. Partagez vos impressions et laissez un avis pour renforcer la confiance et la solidarité au sein de votre communauté."
+      }
+    },
+    "geolocation": {
+      "title": "Géolocalisation & Map",
+      "visualize": {
+        "title": "Visualisez vos trajets en temps réel",
+        "description": "Consultez l'itinéraire exact vers le lieu de l'activité et suivez les trajets proposés directement sur la carte. Chaque adresse est affichée avec précision pour faciliter votre déplacement."
+      },
+      "follow_driver": {
+        "title": "Suivez votre conducteur",
+        "description": "Lorsqu'un conducteur accepte votre demande, vous pouvez suivre sa position sur la carte en temps réel. L'application affiche également le temps d'attente estimé jusqu'au point de rendez-vous."
+      },
+      "find_closest": {
+        "title": "Trouvez les trajets les plus proches",
+        "description": "Les différentes offres de covoiturage sont automatiquement triées selon la distance entre vous et le conducteur. Cela vous permet de choisir le trajet le plus pratique et le plus rapide."
+      }
+    }
+  },
+  "blog_page": {
+    "all": "Tous",
+    "no_articles": "Aucun article trouvé pour cette catégorie.",
+    "article_detail": {
+      "published_on": "Publié le",
+      "other_articles": "Autres articles"
+    }
+  },
+  "breadcrumb": {
+    "home": "Accueil"
   }
 }
