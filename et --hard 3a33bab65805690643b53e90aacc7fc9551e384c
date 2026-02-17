@@ -1,0 +1,245 @@
+[33mcommit 45d30fa45f86584e4589d65415627268db2ad2fc[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mbiguedi[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 15:16:30 2026 +0000
+
+    Suppression des anciens fichiers de composants renommés
+
+[33mcommit 3a33bab65805690643b53e90aacc7fc9551e384c[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 15:16:11 2026 +0000
+
+    Correction du formatage du layout par défaut
+
+[33mcommit 4ac9891e4d240ac7b28535d5fd8454f090039946[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 15:15:55 2026 +0000
+
+    Correction du formatage du composant QuiSommesNous
+
+[33mcommit 3b565a8755ca422aa99f5f58ac1c380b27a674db[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 15:15:39 2026 +0000
+
+    Correction du formatage du composant QuiPeutUtiliser
+
+[33mcommit 21c25dbd45d8eef0a8119fdddb716babb49a6a51[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 15:15:17 2026 +0000
+
+    Correction du formatage du composant NotreApp
+
+[33mcommit fef2534da801dd5b31b0066da9733c44f7c9c286[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 15:14:56 2026 +0000
+
+    Correction du formatage du composant NosOffres
+
+[33mcommit bc4a6c080438f5d6dbb232fe90ae94be2e7f526b[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 15:14:41 2026 +0000
+
+    Correction du formatage du composant HeroSection
+
+[33mcommit 30dd14b405377df766ba2987e531bbe0c873b044[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 15:14:15 2026 +0000
+
+    Correction du formatage du composant CommentCaMarche
+
+[33mcommit 754df2ff398b3163c240bb404be9216d212d74a2[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 15:13:53 2026 +0000
+
+    Correction du formatage du fichier app.vue
+
+[33mcommit 2c67afda2358cc412477b798db7b8480e87a2ae6[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 15:12:51 2026 +0000
+
+    Renommage du composant footer en FooterSection et correction de la récursion
+
+[33mcommit ffda22aabd54e3d4f1fb6f82d777161cda7e0cac[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 15:12:35 2026 +0000
+
+    Renommage du composant header en HeaderSection et correction de la récursion
+
+[33mcommit 4647e848cc3864dc5cf4a2c5ba7e918e544011ac[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 15:12:16 2026 +0000
+
+    Renommage du composant Breadcrumb en BreadcrumbNav
+
+[33mcommit cf4fee8a218ebcd68bc5e2eb07ea6cb239ca7223[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 15:11:57 2026 +0000
+
+    Renommage du composant actualites en ActualitesSection
+
+[33mcommit b5f38688a74836adcaf6735ac47cf2a21c4ff37d[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 15:11:36 2026 +0000
+
+    Correction du formatage de la page liste des articles
+
+[33mcommit f959989e7d51a03daecdab251df2cd97f95104a1[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 15:11:16 2026 +0000
+
+    Correction du formatage de la page article de blog
+
+[33mcommit 6d23b235d7f0c1f0a2647e990741062a2896597c[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 15:10:56 2026 +0000
+
+    Correction du formatage de la page fonctionnalités
+
+[33mcommit de2c71dc64db46765648f3949f5701747efd00a4[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 15:10:41 2026 +0000
+
+    Correction du formatage de la page FAQ
+
+[33mcommit f11062b08583cb35d597dc5a79eaf295733d4765[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 15:10:23 2026 +0000
+
+    Correction du formatage de la page contact
+
+[33mcommit a6da78184540582f1562331c151b1c8c676882c2[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 15:10:06 2026 +0000
+
+    Correction du formatage de la page d'accueil
+
+[33mcommit fd6417fc88423a8495f79896236aae659bd26e75[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 15:09:46 2026 +0000
+
+    Correction de la configuration Nuxt (ordre des clés et formatage)
+
+[33mcommit 8541c02dc08bb3d7053e6ddcd4b0dc67839f32d2[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 14:50:49 2026 +0000
+
+    feat: remplacement du logo Nuxt par le logo ICC
+    
+    - Ajout du titre 'ICC Covoiturage - Impact Centre Chrétien'
+    - Remplacement du favicon par le logo ICC
+    - Configuration des meta tags pour le SEO
+    - Le logo ICC est maintenant affiché dans l'onglet du navigateur
+
+[33mcommit c6ad2d07e0f7b60a1fc4142a18dcff02406c126e[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 14:45:46 2026 +0000
+
+    fix(ci): simplification des workflows GitHub Actions
+    
+    - Ajout de continue-on-error pour les étapes non critiques
+    - Réduction de la fréquence du security audit (hebdomadaire)
+    - Suppression des jobs complexes (CodeQL, security-headers, eslint-security)
+    - Focus sur l'essentiel : build et audit de sécurité basique
+
+[33mcommit ea06b99ca9dcdef204c56324fc2ac9ece3f7b068[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 14:39:01 2026 +0000
+
+    fix(pages): correction de la page blog pour afficher le composant actualites
+    
+    - Remplacement du contenu de blog/index.vue
+    - Affichage du composant actualites.vue
+    - Breadcrumb conservé pour la navigation
+
+[33mcommit 333f270c982ddc3cdf596189f086988718fd0ccd[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 14:32:22 2026 +0000
+
+    mise à jour du readme.md
+
+[33mcommit ed33f55a4ae897578a5c6ee8a83deaaf93df3e02[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 14:28:45 2026 +0000
+
+    mise à jour du fichier
+
+[33mcommit 6377e16a1a8f3bdb8d54e9df114545031cbeb048[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 14:27:42 2026 +0000
+
+    mise à jour du fichier
+
+[33mcommit 8336d1b5f0397ce437ea76431a93f13d4f237876[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 14:23:47 2026 +0000
+
+    chore: ajout de la configuration VS Code
+    
+    - Configuration de l'éditeur
+    - Extensions recommandées
+    - Paramètres du workspace
+
+[33mcommit fa888daa53a48a24e223b743dc1f7f2397098ba1[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 14:23:24 2026 +0000
+
+    assets: ajout du logo ICC Covoiturage en SVG
+    
+    - Logo texte ICC Covoiturage
+    - Format SVG vectoriel
+    - Utilisable pour la documentation
+
+[33mcommit 293af5a53cb5dbb5830b5ea7cdec66e600334d97[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 14:22:55 2026 +0000
+
+    i18n: mise à jour des traductions françaises
+    
+    - Traductions complètes en français
+    - Toutes les sections de l'application
+    - Navigation, pages, composants
+
+[33mcommit 7975ed68dd3b2e958ae2c80e31d91af0216e5a40[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 14:22:31 2026 +0000
+
+    i18n: mise à jour des traductions anglaises
+    
+    - Traductions complètes en anglais
+    - Toutes les sections de l'application
+    - Navigation, pages, composants
+
+[33mcommit 52f3594a75ce7fb2879050ca61cb68b8c369b073[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 14:22:05 2026 +0000
+
+    feat(pages): mise à jour de la page fonctionnalités
+    
+    - Détails des fonctionnalités de l'application
+    - Certification, parc automobile, géolocalisation
+    - Support multilingue
+
+[33mcommit 860542bbb936aa32e8d347c50eec7fd3a0a1b7b0[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 14:21:42 2026 +0000
+
+    feat(pages): mise à jour de la page FAQ
+    
+    - Questions fréquentes avec recherche
+    - Accordion pour les réponses
+    - Support multilingue
+
+[33mcommit 43a13b91d5e658251e5ac97c71e22a502fa2e587[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 14:21:22 2026 +0000
+
+    feat(pages): mise à jour de la page contact
+    
+    - Formulaire de contact complet
+    - Informations de contact (téléphone, adresse)
+    - Support multilingue
+
+[33mcommit d84368cf44d066be9248cebdf5369819e5a71b1a[m
+Author: GTW503 <mebaessodomkevin@gmail.com>
+Date:   Thu Feb 12 14:21:00 2026 +0000
+
+    feat(pages): mise à jour de 

@@ -47,9 +47,9 @@
   },
   "contact": {
     "title": "Contactez-nous!",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "phone": "+228 93 00 00 00",
-    "address": "Hountigomé, Lomé",
+    "description": "​Vous avez une question, un besoin de prière, ou vous souhaitez en savoir plus sur nos activités et nos programmes ? Notre équipe est à votre écoute et se fera un plaisir de vous répondre. N’hésitez pas à nous contacter par téléphone, par email ou à nous rendre visite directement sur place. À ICC Lomé, chaque personne compte et votre message est important pour nous.",
+    "phone": "+228 93 33 22 33",
+    "address": "Route de l'aeroport 2ème von après la station NLR, ancien oando(von de l'ASAIGEet de l'IFDC) et ensuite première von à gauche",
     "form": {
       "first_name": "Nom",
       "email": "Email",

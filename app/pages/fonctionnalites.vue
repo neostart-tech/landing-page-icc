@@ -156,9 +156,9 @@
             </h3>
 
             <img
-              src="/images/t.png"
+              src="/images/capture.png"
               alt="Application mobile"
-              class="w-full max-w-xs mx-auto mt-10"
+              class="w-full h-82 object-contain"
             >
           </div>
         </div>
@@ -285,9 +285,9 @@
         <!-- DROITE : Image qui prend tout le côté -->
         <div class="flex items-center justify-center h-full w-full overflow-hidden">
           <img
-            src="/images/t.png"
+            src="/images/capture.png"
             alt="Application Mobile"
-            class="max-h-[320px] lg:max-h-[400px] w-auto object-contain"
+            class="max-h-[320px] lg:max-h-[350px] w-auto object-contain"
           >
         </div>
       </div>

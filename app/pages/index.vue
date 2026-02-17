@@ -6,7 +6,6 @@
     <QuiPeutUtiliser />
     <CommentCaMarche />
     <QuiSommesNous />
-    <ActualitesSection />
   </div>
 </template>
 
@@ -17,5 +16,4 @@ import NosOffres from '~/components/NosOffres.vue'
 import QuiPeutUtiliser from '~/components/QuiPeutUtiliser.vue'
 import CommentCaMarche from '~/components/CommentCaMarche.vue'
 import QuiSommesNous from '~/components/QuiSommesNous.vue'
-import ActualitesSection from '~/components/ActualitesSection.vue'
 </script>
