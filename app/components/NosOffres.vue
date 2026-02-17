@@ -12,10 +12,10 @@
       </p>
 
       <!-- BLOCS -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center max-w-4xl mx-auto">
         <!-- Bloc 1 -->
         <div class="bg-[#3D0F2F] text-white rounded-2xl overflow-hidden flex flex-col justify-between items-center">
-          <div class="p-6 z-10 relative">
+          <div class="p-2 z-10 relative">
             <h3 class="text-xl font-extrabold mb-3">
               {{ $t('what_we_offer.cards.carpooling.title') }}
             </h3>
@@ -30,7 +30,7 @@
           <img
             src="/images/t.png"
             alt="Illustration"
-            class="w-full h-95 object-cover"
+            class="w-full h-34 object-cover"
           >
         </div>
 
@@ -42,7 +42,7 @@
           <div class="absolute inset-0 bg-black/50" />
 
           <!-- Contenu -->
-          <div class="relative z-10 p-6 text-center">
+          <div class="relative z-10 p-2 text-center">
             <h3 class="text-xl font-extrabold mb-3">
               {{ $t('what_we_offer.cards.communication.title') }}
             </h3>
@@ -64,7 +64,7 @@
           <div class="absolute inset-0 bg-[#8F578B]/80" />
 
           <!-- Contenu -->
-          <div class="relative z-10 p-6 text-center">
+          <div class="relative z-10 p-2 text-center">
             <h3 class="text-xl font-extrabold mb-3">
               {{ $t('what_we_offer.cards.enjoy_app.title') }}
             </h3>
@@ -82,5 +82,4 @@
 </template>
 
 <script setup>
-// Aucune logique nécessaire ici
 </script>

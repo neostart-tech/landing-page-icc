@@ -47,9 +47,9 @@
   },
   "contact": {
     "title": "Contact Us!",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "phone": "+228 93 00 00 00",
-    "address": "Hountigomé, Lomé",
+    "description": "Do you have a question, a prayer request, or would you like to learn more about our activities and programs? Our team is here to listen and will be happy to answer your questions. Feel free to contact us by phone, email, or visit us directly on site. At ICC Lomé, every person matters and your message is important to us.",
+    "phone": "+228 93 33 22 33",
+    "address": "Airport road, second turn after the NLR station, former Oando (turn from ASAIGE and IFDC) and then first turn on the left",
     "form": {
       "first_name": "Name",
       "email": "Email",

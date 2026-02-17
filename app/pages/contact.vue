@@ -5,7 +5,7 @@
     <div class="bg-white">
       <!-- CONTACT SECTION -->
       <section class="py-18 px-8 lg:px-16 xl:px-24 2xl:px-32">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <!-- LEFT : CONTACT INFOS -->
           <div class="flex flex-col justify-start">
             <h2 class="text-2xl text-black font-extrabold mb-5">
