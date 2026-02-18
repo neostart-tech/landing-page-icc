@@ -37,10 +37,10 @@
               to="/fonctionnalites"
               class="nav-link"
             >{{ $t("nav.features") }}</NuxtLink>
-            <NuxtLink
+            <!-- <NuxtLink
               to="/blog"
               class="nav-link"
-            >{{ $t("nav.blog") }}</NuxtLink>
+            >{{ $t("nav.blog") }}</NuxtLink> -->
             <NuxtLink
               to="/faq"
               class="nav-link"
@@ -152,13 +152,13 @@
             >
               {{ $t("nav.features") }}
             </NuxtLink>
-            <NuxtLink
+            <!-- <NuxtLink
               to="/blog"
               class="block px-4 py-3 text-base font-medium text-[#202a50] hover:bg-gray-100 rounded-lg transition-colors"
               @click="closeMobile"
             >
               {{ $t("nav.blog") }}
-            </NuxtLink>
+            </NuxtLink> -->
             <NuxtLink
               to="/faq"
               class="block px-4 py-3 text-base font-medium text-[#202a50] hover:bg-gray-100 rounded-lg transition-colors"
@@ -251,6 +251,8 @@ const openDownloadModal = () => {
   isDownloadModalOpen.value = true
   isMobileMenuOpen.value = false
 }
+
+
 </script>
 
 <style scoped>

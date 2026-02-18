@@ -63,5 +63,12 @@ export default defineNuxtConfig({
       alwaysRedirect: false,
       fallbackLocale: 'fr'
     }
-  }
+  },
+  runtimeConfig: {
+    public: {
+        apiBaseUrl: '',
+      apiKeyHeaderName: '',
+      apiKey: '',
+    },
+  },
 })

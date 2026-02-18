@@ -1,18 +1,16 @@
 <template>
   <div>
-    <BreadcrumbNav
-      :breadcrumb="breadcrumbItems"
-    />
+    <BreadcrumbNav :breadcrumb="breadcrumbItems" />
 
     <section class="py-24 bg-white">
       <div class="max-w-5xl mx-auto px-5 lg:px-10">
         <!-- TITRE -->
         <div class="text-center mb-20">
           <h2 class="text-3xl lg:text-4xl font-extrabold text-black mb-6">
-            {{ $t('faq_page.title') }}
+            {{ $t("faq_page.title") }}
           </h2>
           <p class="text-black text-lg">
-            {{ $t('faq_page.subtitle') }} <br><br><br>
+            {{ $t("faq_page.subtitle") }} <br /><br /><br />
           </p>
         </div>
 
@@ -63,7 +61,7 @@
               v-show="activeIndex === index"
               class="px-6 pb-6 pl-10 text-black leading-relaxed text-sm lg:text-base"
             >
-              {{ item.answer }}
+              <div v-html="item.answer"></div>
             </div>
           </div>
         </div>
@@ -73,39 +71,41 @@
 </template>
 
 <script setup>
-import BreadcrumbNav from '~/components/BreadcrumbNav.vue'
-import { ref } from 'vue'
-import { useI18n } from 'vue-i18n'
+import BreadcrumbNav from "~/components/BreadcrumbNav.vue";
+import { ref, computed, onMounted } from "vue";
+import { useI18n } from "vue-i18n";
+import { useFaqService } from "@/services/faq_service";
 
-const { t } = useI18n()
+const { t } = useI18n();
+const { getFaqs } = useFaqService();
 
 const breadcrumbItems = [
-  { label: t('breadcrumb.home'), href: '/' },
-  { label: t('nav.faq') }
-]
+  { label: t("breadcrumb.home"), href: "/" },
+  { label: t("nav.faq") },
+];
 
-const activeIndex = ref(null)
+const activeIndex = ref(null);
+const allFaqs = ref([]);
+const loading = ref(true);
 
 const toggle = (index) => {
-  activeIndex.value = activeIndex.value === index ? null : index
-}
+  activeIndex.value = activeIndex.value === index ? null : index;
+};
 
-const faqs = [
-  {
-    question: t('faq_page.questions.q1.question'),
-    answer: t('faq_page.questions.q1.answer')
-  },
-  {
-    question: t('faq_page.questions.q2.question'),
-    answer: t('faq_page.questions.q2.answer')
-  },
-  {
-    question: t('faq_page.questions.q3.question'),
-    answer: t('faq_page.questions.q3.answer')
-  },
-  {
-    question: t('faq_page.questions.q4.question'),
-    answer: t('faq_page.questions.q4.answer')
+// ✅ FILTRE FRONTEND
+const faqs = computed(() => {
+  return allFaqs.value
+    .filter((faq) => faq.category === "landing_page")
+    .sort((a, b) => a.order - b.order);
+});
+
+onMounted(async () => {
+  const result = await getFaqs();
+
+  if (result.success) {
+    allFaqs.value = Array.isArray(result.data.data) ? result.data.data : [];
   }
-]
+
+  loading.value = false;
+});
 </script>

@@ -1,5 +1,6 @@
 import * as axios from "axios";
 import config from "../config";
+import { defineNuxtPlugin } from "nuxt/app";
 
 const baseURL = config.app_locale ? config.app_dev_url : config.app_prod_url;
 export default defineNuxtPlugin(() => {
