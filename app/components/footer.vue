@@ -199,7 +199,7 @@
           </h4>
           <div class="space-y-2.5 md:space-y-3">
             <a
-              href="#"
+              href="https://play.google.com/store/apps/details?id=tech.neostart.icc.covoiturage.stable&pcampaignid=web_share"
               class="flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-2.5 sm:py-3 bg-white text-[#6a0d5f] rounded-lg hover:bg-gray-100 transition"
             >
               <img
