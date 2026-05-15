@@ -29,12 +29,14 @@
         </p>
 
         <div class="flex justify-center mt-6 md:mt-8">
-          <button
-            class="px-4 sm:px-5 py-2 sm:py-2.5 bg-gradient-to-r from-[#840B7F] to-[#6E096A] text-white rounded-lg text-xs sm:text-sm font-medium hover:shadow-lg transition-shadow"
-            @click="openDownloadModal"
+          <a
+            href="https://icctogo.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block px-4 sm:px-5 py-2 sm:py-2.5 bg-gradient-to-r from-[#840B7F] to-[#6E096A] text-white rounded-lg text-xs sm:text-sm font-medium hover:shadow-lg transition-shadow"
           >
             {{ $t('buttons.see_more') }}
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -42,7 +44,6 @@
 </template>
 
 <script setup>
-// Aucune logique particulière nécessaire
 </script>
 
 <style scoped>
