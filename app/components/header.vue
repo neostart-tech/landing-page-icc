@@ -218,9 +218,18 @@
           {{ $t("download.choose") }}
         </p>
 
-        <button class="w-full bg-green-500 text-white py-2 rounded mb-2">
-          Google Play
-        </button>
+
+        <a
+          href="https://play.google.com/store/apps/details?id=tech.neostart.icc.covoiturage.stable&pcampaignid=web_share"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button class="w-full bg-green-500 text-white py-2 rounded mb-2">
+            Google Play
+          </button>
+        </a>
+
+
         <button class="w-full bg-black text-white py-2 rounded">
           App Store
         </button>
